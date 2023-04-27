@@ -1,8 +1,12 @@
-@use 'sass:map';
+@use "sass:map";
 
 $colors: (
+  "black-color": #252a2c,
+  "light-blue-color": #58C5E1, 
+  "dark-blue-color": #226AF6
 );
 
 $colors-elements: (
-    'main-background': #f4f6f8,
+  "main-background": #fafbfc,
+  "logo-color": #485255,
 );

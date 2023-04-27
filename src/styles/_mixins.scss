@@ -1,0 +1,12 @@
+@use "sass:map";
+@import "../styles/variables";
+
+@mixin blue-button {
+  background-color: map.get($colors, dark-blue-color);
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 8px 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 10px;
+}
