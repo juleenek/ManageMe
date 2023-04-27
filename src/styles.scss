@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@use "sass:map";
+@import "../src/styles/variables";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: map.get($colors-elements, main-background);
+}
