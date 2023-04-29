@@ -1,6 +1,6 @@
 # ManageMe
 
-Final project for "Web application programming" classes. The application allows you to manage Devops projects. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+Final project for "Web application programming" classes. ManageMe allows you to manage Devops projects. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
 ## Development server
 
