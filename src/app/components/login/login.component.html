@@ -1,24 +1,13 @@
-<div class="login">
-  <img
-    class="login__image login__image--left"
-    src="../../../assets/login/login-left.png"
-    alt=""
-  />
-  <img
-    class="login__image login__image--right"
-    src="../../../assets/login/login-right.png"
-    alt=""
-  />
-  <div class="login__panel">
-    <img class="login__logo" src="../../../assets/logo.png" alt="" />
-    <h4 class="login__title">Zaloguj się, aby kontunuować</h4>
-    <form>
-      <label>Login:</label>
-      <input type="text" />
-      <label>Hasło:</label>
-      <input type="text" />
-    </form>
-    <button class="login__button">Zaloguj się</button>
-    <p class="login__bottom-text">Nie masz konta? <span class="login__blue-text">Zarejestruj się!</span></p>
-  </div>
-</div>
+<app-authentication>
+  <h4 class="login__title">Zaloguj się, aby kontunuować</h4>
+  <form class="login__form">
+    <label>Login:</label>
+    <input type="text" />
+    <label>Hasło:</label>
+    <input type="text" />
+  </form>
+  <button class="login__button">Zaloguj się</button>
+  <a routerLink="/register" class="login__bottom-link">
+    Nie masz konta? <span class="login__blue-link">Zarejestruj się!</span>
+  </a>
+</app-authentication>

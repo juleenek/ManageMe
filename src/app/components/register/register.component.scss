@@ -2,13 +2,13 @@
 @import "../../../../src/styles/variables";
 @import "../../../../src/styles/mixins";
 
-.login__title {
+.register__title {
   color: map.get($colors, black-color);
   font-weight: 400;
   padding-top: 10px;
 }
 
-.login__form {
+.register__form {
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -19,16 +19,16 @@
   }
 }
 
-.login__button {
+.register__button {
   @include blue-button;
   margin: 10px 0 5px 0;
 }
 
-.login__bottom-link {
+.register__bottom-link {
   @include auth-form-link;
 }
 
-.login__blue-link {
+.register__blue-link {
   color: map.get($colors, dark-blue-color);
   font-weight: 600;
 }
