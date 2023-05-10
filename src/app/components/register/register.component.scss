@@ -32,3 +32,11 @@
   color: map.get($colors, dark-blue-color);
   font-weight: 600;
 }
+
+.register__error-msg {
+  padding: 0;
+  margin: -15px 0 -10px 0;
+  font-size: 0.6rem;
+  color: rgb(220, 9, 9);
+  font-weight: 500;
+}

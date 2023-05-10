@@ -1,16 +1,55 @@
 <app-authentication>
   <h4 class="register__title">Załóż konto w aplikacji</h4>
-  <form class="register__form">
+  <form [formGroup]="user" class="register__form">
     <label>Login:</label>
-    <input type="text" />
+    <input formControlName="login" />
+    <p *ngIf="registerErrors.isLoginRequiredError" class="register__error-msg">
+      Login jest wymagany
+    </p>
+    <p *ngIf="registerErrors.isLoginLengthError" class="register__error-msg">
+      Podany login jest za krótki
+    </p>
+    <p *ngIf="registerErrors.isLoginExistError" class="register__error-msg">
+      Podany login już istnieje
+    </p>
     <label>Imię:</label>
-    <input type="text" />
+    <input formControlName="first_name" />
+    <p
+      *ngIf="registerErrors.isFirstNameRequiredError"
+      class="register__error-msg"
+    >
+      Imię jest wymagane
+    </p>
     <label>Nazwisko:</label>
-    <input type="text" />
+    <input formControlName="last_name" />
+    <p
+      *ngIf="registerErrors.isLastNameRequiredError"
+      class="register__error-msg"
+    >
+      Nazwisko jest wymagane
+    </p>
     <label>Hasło:</label>
-    <input type="text" />
+    <input formControlName="password" />
+    <p
+      *ngIf="registerErrors.isPasspordRequiredError"
+      class="register__error-msg"
+    >
+      Hasło jest wymagane
+    </p>
+    <p
+      *ngIf="registerErrors.isPassportLengthError"
+      class="register__error-msg"
+    >
+      Podane hasło jest za krótkie
+    </p>
+    <p
+      *ngIf="registerErrors.isPassportExistError"
+      class="register__error-msg"
+    >
+      Podane hasło już istnieje
+    </p>
   </form>
-  <button class="register__button">Zarejestruj się</button>
+  <button (click)="onSubmit()" class="register__button">Zarejestruj się</button>
   <a routerLink="/login" class="register__bottom-link">
     Masz już konto? <span class="register__blue-link">Zaloguj się!</span>
   </a>
