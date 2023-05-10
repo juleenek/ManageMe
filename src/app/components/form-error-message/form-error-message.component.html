@@ -1,0 +1,54 @@
+<p
+  *ngIf="registerErrors.isLoginRequiredError && formInputName === 'login'"
+  class="register__error-msg"
+>
+  Login jest wymagany
+</p>
+<p
+  *ngIf="registerErrors.isLoginLengthError && formInputName === 'login'"
+  class="register__error-msg"
+>
+  Podany login jest za krótki
+</p>
+<p
+  *ngIf="registerErrors.isLoginExistError && formInputName === 'login'"
+  class="register__error-msg"
+>
+  Podany login już istnieje
+</p>
+<p
+  *ngIf="
+    registerErrors.isFirstNameRequiredError && formInputName === 'first_name'
+  "
+  class="register__error-msg"
+>
+  Imię jest wymagane
+</p>
+<p
+  *ngIf="
+    registerErrors.isLastNameRequiredError && formInputName === 'last_name'
+  "
+  class="register__error-msg"
+>
+  Nazwisko jest wymagane
+</p>
+<p
+  *ngIf="
+    registerErrors.isPasspordRequiredError && formInputName === 'password'
+  "
+  class="register__error-msg"
+>
+  Hasło jest wymagane
+</p>
+<p
+  *ngIf="registerErrors.isPassportLengthError && formInputName === 'password'"
+  class="register__error-msg"
+>
+  Podane hasło jest za krótkie
+</p>
+<p
+  *ngIf="registerErrors.isPassportExistError && formInputName === 'password'"
+  class="register__error-msg"
+>
+  Podane hasło już istnieje
+</p>

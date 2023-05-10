@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AuthenticationComponent } from './components/authentication/authentication.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormErrorMessageComponent } from './components/form-error-message/form-error-message.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AuthenticationComponent,
     RegisterComponent,
+    FormErrorMessageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

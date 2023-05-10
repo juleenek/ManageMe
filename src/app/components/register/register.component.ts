@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RegisterForm } from 'src/app/models/register-form.model';
 import { RegisterErrors } from '../../models/types/Errors';
 import { checkRegisterErrors } from '../../utils/checkers';
+import { DefaultFormErrorsService } from '../../services/default-form-errors.service';
 
 @Component({
   selector: 'app-register',
@@ -11,17 +12,9 @@ import { checkRegisterErrors } from '../../utils/checkers';
 })
 export class RegisterComponent {
   user!: FormGroup<RegisterForm>;
-
-  registerErrors: RegisterErrors = {
-    isLoginRequiredError: false,
-    isLoginLengthError: false,
-    isLoginExistError: false,
-    isFirstNameRequiredError: false,
-    isLastNameRequiredError: false,
-    isPasspordRequiredError: false,
-    isPassportLengthError: false,
-    isPassportExistError: false,
-  };
+  formErrorsService = new DefaultFormErrorsService();
+  registerErrors: RegisterErrors =
+    this.formErrorsService.getRegisterDefaultFormErrors();
 
   constructor(private readonly formBuilder: FormBuilder) {}
   ngOnInit(): void {

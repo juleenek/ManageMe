@@ -10,7 +10,7 @@
 
 .register__form {
   display: flex;
-  gap: 20px;
+  gap: 13px;
   flex-direction: column;
   padding: 0px 0 20px 0;
 
@@ -31,12 +31,4 @@
 .register__blue-link {
   color: map.get($colors, dark-blue-color);
   font-weight: 600;
-}
-
-.register__error-msg {
-  padding: 0;
-  margin: -15px 0 -10px 0;
-  font-size: 0.6rem;
-  color: rgb(220, 9, 9);
-  font-weight: 500;
 }
