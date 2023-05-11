@@ -19,29 +19,36 @@ export class UserService {
   private users: User[] = [];
 
   constructor() {
-    this.isUserLoggedIn = false;
-    localStorage.setItem('isLogged', JSON.stringify(this.isUserLoggedIn));
+    !this.getCurrentUser()
+      ? (this.isUserLoggedIn = false)
+      : (this.isUserLoggedIn = true);
+
+    localStorage.setItem('isLoggedIn', JSON.stringify(this.isUserLoggedIn));
     this.saveUser(this.ADMIN);
   }
 
-  setUserLoggedIn() {
+  setUserLoggedIn(user: User) {
     this.isUserLoggedIn = true;
-    localStorage.setItem('isLogged', JSON.stringify(this.isUserLoggedIn));
+    localStorage.setItem('isLoggedIn', JSON.stringify(this.isUserLoggedIn));
+    localStorage.setItem('currentUser', JSON.stringify(user));
   }
 
   getUserLoggedIn() {
-    return localStorage.getItem('isLogged') != null
-      ? localStorage.getItem('isLogged')
+    return localStorage.getItem('isLoggedIn') != null
+      ? localStorage.getItem('isLoggedIn')
       : false;
   }
 
   setUserLoggedOut() {
     this.isUserLoggedIn = false;
-    localStorage.setItem('isLogged', JSON.stringify(this.isUserLoggedIn));
+    localStorage.setItem('isLoggedIn', JSON.stringify(this.isUserLoggedIn));
   }
 
   saveUser(user: User) {
     this.users.push(user);
     localStorage.setItem('users', JSON.stringify(this.users));
+  }
+  getCurrentUser() {
+    return localStorage.getItem('currentUser');
   }
 }

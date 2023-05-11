@@ -38,6 +38,7 @@ export class RegisterComponent {
     if (this.user.status === 'VALID') {
       const newUser: User = { id: generateId(), ...this.user.value } as User;
       this.userService.saveUser(newUser);
+      this.userService.setUserLoggedIn(newUser);
     }
 
     if (this.user.status === 'INVALID') {
