@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { UserRole } from 'src/app/models/enums/role.enum';
-import { User } from 'src/app/models/user.model';
-import { generateId } from '../utils/generators';
+import { UserRole } from 'src/app/_models/enums/role.enum';
+import { User } from 'src/app/_models/user.model';
+import { generateId } from '../_utils/generators';
 
 @Injectable({
   providedIn: 'root',

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { RegisterForm } from 'src/app/models/register-form.model';
-import { RegisterErrors } from '../../models/types/Errors';
-import { checkRegisterErrors } from '../../utils/checkers';
-import { DefaultFormErrorsService } from '../../services/default-form-errors.service';
-import { UserService } from 'src/app/services/user.service';
-import { User } from 'src/app/models/user.model';
-import { generateId } from 'src/app/utils/generators';
+import { RegisterForm } from 'src/app/_models/register-form.model';
+import { RegisterErrors } from '../../_models/types/Errors';
+import { checkRegisterErrors } from '../../_utils/checkers';
+import { DefaultFormErrorsService } from '../../_services/default-form-errors.service';
+import { UserService } from 'src/app/_services/user.service';
+import { User } from 'src/app/_models/user.model';
+import { generateId } from 'src/app/_utils/generators';
 
 @Component({
   selector: 'app-register',
