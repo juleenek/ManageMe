@@ -1,6 +1,6 @@
 @use "sass:map";
-@import "../../../../src/styles/variables";
-@import "../../../../src/styles/mixins";
+@import "../../../../../src/styles/variables";
+@import "../../../../../src/styles/mixins";
 
 .register__title {
   color: map.get($colors, black-color);

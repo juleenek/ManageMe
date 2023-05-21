@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { RegisterErrors } from 'src/app/_models/types/Errors';
-import { DefaultFormErrorsService } from 'src/app/_services/default-form-errors.service';
+import { RegisterErrors } from 'src/app/models/types/Errors';
+import { DefaultFormErrorsService } from 'src/app/services/default-form-errors.service';
 
 @Component({
   selector: 'app-form-error-message',

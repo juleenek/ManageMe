@@ -1,5 +1,5 @@
-import { RegisterForm } from '../_models/register-form.model';
-import { RegisterErrors } from '../_models/types/Errors';
+import { RegisterForm } from '../models/register-form.model';
+import { RegisterErrors } from '../models/types/Errors';
 
 export const checkRegisterErrors = (
   userControls: RegisterForm,

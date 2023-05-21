@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { RegisterErrors } from '../_models/types/Errors';
+import { RegisterErrors } from '../models/types/Errors';
 
 @Injectable({
   providedIn: 'root',
