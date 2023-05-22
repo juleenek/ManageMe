@@ -7,6 +7,7 @@ import { DefaultFormErrorsService } from '../../../services/default-form-errors.
 import { User } from 'src/app/models/user.model';
 import { UserApiService } from 'src/app/api/user-api.service';
 import { generateId } from 'src/app/utils/generators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -22,7 +23,8 @@ export class RegisterComponent {
 
   constructor(
     private readonly formBuilder: FormBuilder,
-    private apiService: UserApiService
+    private apiService: UserApiService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -52,6 +54,13 @@ export class RegisterComponent {
         .subscribe(() => {
           this.refreshPeople();
         });
+
+      this.apiService
+        .loginUser({ id: generateId(), ...this.user.value } as User)
+        .subscribe(() => {
+          this.refreshPeople();
+        });
+      this.router.navigate(['/']);
     }
 
     if (this.user.status === 'INVALID') {

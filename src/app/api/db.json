@@ -7,6 +7,30 @@
       "last_name": "admin",
       "role": "Admin",
       "password": "p@$$word"
+    },
+    {
+      "id": "39ac4f94-ea4e-457a-aa6c-a33541f61e20",
+      "login": "aaaaaaa",
+      "first_name": "aa",
+      "last_name": "aaaaaa",
+      "password": "aaaaaaaaa"
+    },
+    {
+      "id": "741468f6-1503-4d9a-aeac-6e8b5ff6200b",
+      "login": "aaaaaaaaaa",
+      "first_name": "aa",
+      "last_name": "aa",
+      "password": "aaaaaaaaaa"
     }
-  ]
+  ],
+  "meta": {
+    "isLogged": true,
+    "currentUser": {
+      "id": "a3acf230-910e-4823-8691-f8172b3542ca",
+      "login": "aaaaaaaaaa",
+      "first_name": "aa",
+      "last_name": "aa",
+      "password": "aaaaaaaaaa"
+    }
+  }
 }
