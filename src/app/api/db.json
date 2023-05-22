@@ -21,16 +21,24 @@
       "first_name": "aa",
       "last_name": "aa",
       "password": "aaaaaaaaaa"
+    },
+    {
+      "id": "4d287da8-f119-406b-b64d-92b92fe6d4af",
+      "login": "arfrff44gr",
+      "first_name": "4gg",
+      "last_name": "4g",
+      "password": "gggggggggg"
+    },
+    {
+      "id": "385c72e9-4ec0-4f1f-a438-b2bc67d08191",
+      "login": "nnnnnnnnn",
+      "first_name": "n",
+      "last_name": "n",
+      "password": "nnnnnnnnnn"
     }
   ],
   "meta": {
-    "isLogged": true,
-    "currentUser": {
-      "id": "a3acf230-910e-4823-8691-f8172b3542ca",
-      "login": "aaaaaaaaaa",
-      "first_name": "aa",
-      "last_name": "aa",
-      "password": "aaaaaaaaaa"
-    }
+    "isLogged": false,
+    "currentUser": {}
   }
 }

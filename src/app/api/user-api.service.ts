@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from 'src/app/models/user.model';
 import { MetaData } from '../models/meta.model';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -10,8 +11,7 @@ import { MetaData } from '../models/meta.model';
 export class UserApiService {
   headers = { 'content-type': 'application/json' };
 
-
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>('/api/users');
@@ -27,6 +27,21 @@ export class UserApiService {
       isLogged: true,
       currentUser: user,
     };
+
+    this.router.navigate(['/']);
+
+    return this.http.post('/api/meta', body, {
+      headers: this.headers,
+    });
+  }
+
+  logoutUser(): Observable<any> {
+    const body: MetaData = {
+      isLogged: false,
+      currentUser: {} as User,
+    };
+
+    this.router.navigate(['/login']);
 
     return this.http.post('/api/meta', body, {
       headers: this.headers,

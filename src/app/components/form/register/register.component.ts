@@ -34,10 +34,10 @@ export class RegisterComponent {
       last_name: ['', [Validators.required]],
       password: ['', [Validators.required, Validators.minLength(6)]],
     });
-    this.refreshPeople();
+    this.refreshUsers();
   }
 
-  refreshPeople() {
+  refreshUsers() {
     this.apiService.getUsers().subscribe((data) => {
       this.users = data;
     });
@@ -52,13 +52,13 @@ export class RegisterComponent {
       this.apiService
         .addUser({ id: generateId(), ...this.user.value } as User)
         .subscribe(() => {
-          this.refreshPeople();
+          this.refreshUsers();
         });
 
       this.apiService
         .loginUser({ id: generateId(), ...this.user.value } as User)
         .subscribe(() => {
-          this.refreshPeople();
+          this.refreshUsers();
         });
       this.router.navigate(['/']);
     }
