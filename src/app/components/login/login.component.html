@@ -7,7 +7,7 @@
     <input type="password" formControlName="password" />
     <app-form-error-message
       [formErrors]="formErrors"
-      formInputName="login_page"
+      [formInputName]="FormInputEnum.LOGIN_PAGE"
     />
   </form>
   <button (click)="onSubmit()" class="login__button">Zaloguj się</button>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UserApiService } from 'src/app/api/user-api.service';
+import { FormInput } from 'src/app/models/enums/form-input.enum';
 import { FormErrors } from 'src/app/models/types/Errors';
 import { LoginForm } from 'src/app/models/user-form.model';
 import { User } from 'src/app/models/user.model';
@@ -16,6 +17,7 @@ import { generateId } from 'src/app/utils/generators';
 export class LoginComponent {
   user!: FormGroup<LoginForm>;
   users: User[] = [];
+  readonly FormInputEnum = FormInput;
   formErrorsService = new DefaultFormErrorsService();
   formErrors: FormErrors =
     this.formErrorsService.getRegisterDefaultFormErrors();

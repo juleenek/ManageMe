@@ -1,53 +1,70 @@
 <p
-  *ngIf="formErrors.isLoginRequiredError && formInputName === 'login'"
+  *ngIf="
+    formErrors.isLoginRequiredError && formInputName === FormInputEnum.LOGIN
+  "
   class="form__error-msg"
 >
   Login jest wymagany
 </p>
 <p
-  *ngIf="formErrors.isLoginLengthError && formInputName === 'login'"
+  *ngIf="formErrors.isLoginLengthError && formInputName === FormInputEnum.LOGIN"
   class="form__error-msg"
 >
   Podany login jest za krótki
 </p>
 <p
-  *ngIf="formErrors.isLoginExistError && formInputName === 'login'"
+  *ngIf="formErrors.isLoginExistError && formInputName === FormInputEnum.LOGIN"
   class="form__error-msg"
 >
   Podany login już istnieje
 </p>
 <p
-  *ngIf="formErrors.isFirstNameRequiredError && formInputName === 'first_name'"
+  *ngIf="
+    formErrors.isFirstNameRequiredError &&
+    formInputName === FormInputEnum.FIRST_NAME
+  "
   class="form__error-msg"
 >
   Imię jest wymagane
 </p>
 <p
-  *ngIf="formErrors.isLastNameRequiredError && formInputName === 'last_name'"
+  *ngIf="
+    formErrors.isLastNameRequiredError &&
+    formInputName === FormInputEnum.LAST_NAME
+  "
   class="form__error-msg"
 >
   Nazwisko jest wymagane
 </p>
 <p
-  *ngIf="formErrors.isPasspordRequiredError && formInputName === 'password'"
+  *ngIf="
+    formErrors.isPasspordRequiredError &&
+    formInputName === FormInputEnum.PASSWORD
+  "
   class="form__error-msg"
 >
   Hasło jest wymagane
 </p>
 <p
-  *ngIf="formErrors.isPassportLengthError && formInputName === 'password'"
+  *ngIf="
+    formErrors.isPassportLengthError && formInputName === FormInputEnum.PASSWORD
+  "
   class="form__error-msg"
 >
   Podane hasło jest za krótkie
 </p>
 <p
-  *ngIf="formErrors.isPassportExistError && formInputName === 'password'"
+  *ngIf="
+    formErrors.isPassportExistError && formInputName === FormInputEnum.PASSWORD
+  "
   class="form__error-msg"
 >
   Podane hasło już istnieje
 </p>
 <p
-  *ngIf="formErrors.isLoginPageError && formInputName === 'login_page'"
+  *ngIf="
+    formErrors.isLoginPageError && formInputName === FormInputEnum.LOGIN_PAGE
+  "
   class="form__error-msg"
 >
   Nieprawidłowy login lub hasło

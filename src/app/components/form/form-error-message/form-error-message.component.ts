@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormErrors } from 'src/app/models/types/Errors';
 import { DefaultFormErrorsService } from 'src/app/services/default-form-errors.service';
+import { FormInput } from '../../../models/enums/form-input.enum';
 
 @Component({
   selector: 'app-form-error-message',
@@ -9,7 +10,9 @@ import { DefaultFormErrorsService } from 'src/app/services/default-form-errors.s
 })
 export class FormErrorMessageComponent {
   formErrorsService = new DefaultFormErrorsService();
+  readonly FormInputEnum = FormInput;
+
   @Input() formErrors: FormErrors =
     this.formErrorsService.getRegisterDefaultFormErrors();
-  @Input() formInputName: string | number | null = '';
+  @Input() formInputName: FormInput | null = FormInput.DEFAULT;
 }

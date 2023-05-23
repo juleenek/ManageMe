@@ -8,6 +8,7 @@ import { User } from 'src/app/models/user.model';
 import { UserApiService } from 'src/app/api/user-api.service';
 import { generateId } from 'src/app/utils/generators';
 import { Router } from '@angular/router';
+import { FormInput } from 'src/app/models/enums/form-input.enum';
 
 @Component({
   selector: 'app-register',
@@ -20,6 +21,7 @@ export class RegisterComponent {
   formErrors: FormErrors =
     this.formErrorsService.getRegisterDefaultFormErrors();
   users: User[] = [];
+  readonly FormInputEnum = FormInput;
 
   constructor(
     private readonly formBuilder: FormBuilder,
