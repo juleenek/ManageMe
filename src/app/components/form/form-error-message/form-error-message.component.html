@@ -1,54 +1,54 @@
 <p
-  *ngIf="registerErrors.isLoginRequiredError && formInputName === 'login'"
-  class="register__error-msg"
+  *ngIf="formErrors.isLoginRequiredError && formInputName === 'login'"
+  class="form__error-msg"
 >
   Login jest wymagany
 </p>
 <p
-  *ngIf="registerErrors.isLoginLengthError && formInputName === 'login'"
-  class="register__error-msg"
+  *ngIf="formErrors.isLoginLengthError && formInputName === 'login'"
+  class="form__error-msg"
 >
   Podany login jest za krótki
 </p>
 <p
-  *ngIf="registerErrors.isLoginExistError && formInputName === 'login'"
-  class="register__error-msg"
+  *ngIf="formErrors.isLoginExistError && formInputName === 'login'"
+  class="form__error-msg"
 >
   Podany login już istnieje
 </p>
 <p
-  *ngIf="
-    registerErrors.isFirstNameRequiredError && formInputName === 'first_name'
-  "
-  class="register__error-msg"
+  *ngIf="formErrors.isFirstNameRequiredError && formInputName === 'first_name'"
+  class="form__error-msg"
 >
   Imię jest wymagane
 </p>
 <p
-  *ngIf="
-    registerErrors.isLastNameRequiredError && formInputName === 'last_name'
-  "
-  class="register__error-msg"
+  *ngIf="formErrors.isLastNameRequiredError && formInputName === 'last_name'"
+  class="form__error-msg"
 >
   Nazwisko jest wymagane
 </p>
 <p
-  *ngIf="
-    registerErrors.isPasspordRequiredError && formInputName === 'password'
-  "
-  class="register__error-msg"
+  *ngIf="formErrors.isPasspordRequiredError && formInputName === 'password'"
+  class="form__error-msg"
 >
   Hasło jest wymagane
 </p>
 <p
-  *ngIf="registerErrors.isPassportLengthError && formInputName === 'password'"
-  class="register__error-msg"
+  *ngIf="formErrors.isPassportLengthError && formInputName === 'password'"
+  class="form__error-msg"
 >
   Podane hasło jest za krótkie
 </p>
 <p
-  *ngIf="registerErrors.isPassportExistError && formInputName === 'password'"
-  class="register__error-msg"
+  *ngIf="formErrors.isPassportExistError && formInputName === 'password'"
+  class="form__error-msg"
 >
   Podane hasło już istnieje
+</p>
+<p
+  *ngIf="formErrors.isLoginPageError && formInputName === 'login_page'"
+  class="form__error-msg"
+>
+  Nieprawidłowy login lub hasło
 </p>

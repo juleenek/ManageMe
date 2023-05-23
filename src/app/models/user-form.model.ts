@@ -6,3 +6,8 @@ export type RegisterForm = {
   last_name: FormControl<string>;
   password: FormControl<string>;
 };
+
+export type LoginForm = {
+  login: FormControl<string>;
+  password: FormControl<string>;
+};

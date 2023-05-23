@@ -35,6 +35,13 @@
       "first_name": "n",
       "last_name": "n",
       "password": "nnnnnnnnnn"
+    },
+    {
+      "id": "0d0f1c07-9cd5-4740-a0de-5d3cf77990b2",
+      "login": "asdfghjkl",
+      "first_name": "a",
+      "last_name": "a",
+      "password": "asdfghjkl"
     }
   ],
   "meta": {

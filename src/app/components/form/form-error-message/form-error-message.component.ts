@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RegisterErrors } from 'src/app/models/types/Errors';
+import { FormErrors } from 'src/app/models/types/Errors';
 import { DefaultFormErrorsService } from 'src/app/services/default-form-errors.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { DefaultFormErrorsService } from 'src/app/services/default-form-errors.s
 })
 export class FormErrorMessageComponent {
   formErrorsService = new DefaultFormErrorsService();
-  @Input() registerErrors: RegisterErrors =
+  @Input() formErrors: FormErrors =
     this.formErrorsService.getRegisterDefaultFormErrors();
   @Input() formInputName: string | number | null = '';
 }

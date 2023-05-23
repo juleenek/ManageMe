@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { RegisterForm } from 'src/app/models/register-form.model';
-import { RegisterErrors } from '../../../models/types/Errors';
-import { checkRegisterErrors } from '../../../utils/checkers';
+import { RegisterForm } from 'src/app/models/user-form.model';
+import { FormErrors } from '../../../models/types/Errors';
+import { checkFormErrors } from '../../../utils/checkers';
 import { DefaultFormErrorsService } from '../../../services/default-form-errors.service';
 import { User } from 'src/app/models/user.model';
 import { UserApiService } from 'src/app/api/user-api.service';
@@ -17,7 +17,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
   user!: FormGroup<RegisterForm>;
   formErrorsService = new DefaultFormErrorsService();
-  registerErrors: RegisterErrors =
+  formErrors: FormErrors =
     this.formErrorsService.getRegisterDefaultFormErrors();
   users: User[] = [];
 
@@ -44,8 +44,8 @@ export class RegisterComponent {
   }
 
   onSubmit() {
-    Object.keys(this.registerErrors).forEach((key) => {
-      this.registerErrors[key as keyof RegisterErrors] = false;
+    Object.keys(this.formErrors).forEach((key) => {
+      this.formErrors[key as keyof FormErrors] = false;
     });
 
     if (this.user.status === 'VALID') {
@@ -64,10 +64,7 @@ export class RegisterComponent {
     }
 
     if (this.user.status === 'INVALID') {
-      this.registerErrors = checkRegisterErrors(
-        this.userControls,
-        this.registerErrors
-      );
+      this.formErrors = checkFormErrors(this.userControls, this.formErrors);
     }
   }
   get userControls() {

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { RegisterErrors } from '../models/types/Errors';
+import { FormErrors } from '../models/types/Errors';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DefaultFormErrorsService {
-  defaultFormErrors: RegisterErrors = {
+  defaultFormErrors: FormErrors = {
     isLoginRequiredError: false,
     isLoginLengthError: false,
     isLoginExistError: false,
@@ -14,6 +14,7 @@ export class DefaultFormErrorsService {
     isPasspordRequiredError: false,
     isPassportLengthError: false,
     isPassportExistError: false,
+    isLoginPageError: false,
   };
 
   constructor() {}

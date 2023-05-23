@@ -3,26 +3,23 @@
   <form [formGroup]="user" class="register__form">
     <label>Login:</label>
     <input formControlName="login" />
-    <app-form-error-message
-      [registerErrors]="registerErrors"
-      formInputName="login"
-    />
+    <app-form-error-message [formErrors]="formErrors" formInputName="login" />
     <label>Imię:</label>
     <input formControlName="first_name" />
     <app-form-error-message
-      [registerErrors]="registerErrors"
+      [formErrors]="formErrors"
       formInputName="first_name"
     />
     <label>Nazwisko:</label>
     <input formControlName="last_name" />
     <app-form-error-message
-      [registerErrors]="registerErrors"
+      [formErrors]="formErrors"
       formInputName="last_name"
     />
     <label>Hasło:</label>
-    <input formControlName="password" />
+    <input type="password" formControlName="password" />
     <app-form-error-message
-      [registerErrors]="registerErrors"
+      [formErrors]="formErrors"
       formInputName="password"
     />
   </form>

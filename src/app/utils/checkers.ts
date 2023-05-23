@@ -1,38 +1,38 @@
-import { RegisterForm } from '../models/register-form.model';
-import { RegisterErrors } from '../models/types/Errors';
+import { RegisterForm } from '../models/user-form.model';
+import { FormErrors } from '../models/types/Errors';
 
-export const checkRegisterErrors = (
+export const checkFormErrors = (
   userControls: RegisterForm,
-  registerErrors: RegisterErrors
+  formErrors: FormErrors
 ) => {
   let isFirstLoginError = true;
   let isFirstPassportError = true;
 
   if (userControls.login.hasError('required')) {
-    registerErrors.isLoginRequiredError = true;
+    formErrors.isLoginRequiredError = true;
     isFirstLoginError = false;
   }
 
   if (userControls.login.hasError('minlength') && isFirstLoginError) {
-    registerErrors.isLoginLengthError = true;
+    formErrors.isLoginLengthError = true;
     isFirstLoginError = false;
   }
 
   if (userControls.first_name.hasError('required')) {
-    registerErrors.isFirstNameRequiredError = true;
+    formErrors.isFirstNameRequiredError = true;
   }
 
   if (userControls.last_name.hasError('required')) {
-    registerErrors.isLastNameRequiredError = true;
+    formErrors.isLastNameRequiredError = true;
   }
 
   if (userControls.password.hasError('required')) {
-    registerErrors.isPasspordRequiredError = true;
+    formErrors.isPasspordRequiredError = true;
     isFirstPassportError = false;
   }
   if (userControls.password.hasError('minlength') && isFirstPassportError) {
-    registerErrors.isPassportLengthError = true;
+    formErrors.isPassportLengthError = true;
     isFirstPassportError = false;
   }
-  return registerErrors;
+  return formErrors;
 };

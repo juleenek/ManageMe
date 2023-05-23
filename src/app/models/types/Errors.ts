@@ -1,4 +1,4 @@
-export type RegisterErrors = {
+export type FormErrors = {
   isLoginRequiredError: boolean;
   isLoginLengthError: boolean;
   isLoginExistError: boolean;
@@ -7,4 +7,5 @@ export type RegisterErrors = {
   isPasspordRequiredError: boolean;
   isPassportLengthError: boolean;
   isPassportExistError: boolean;
+  isLoginPageError: boolean;
 };
