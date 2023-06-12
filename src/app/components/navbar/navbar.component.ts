@@ -26,7 +26,6 @@ export class NavbarComponent {
     this.apiService.getMetaUser().subscribe((response) => {
       this.currentUser = response.currentUser;
     });
-    console.log('user: ' + this.currentUser);
   }
 
   onLogout() {

@@ -1,0 +1,39 @@
+.home__container {
+  padding: 30px 130px;
+}
+
+.home__heading {
+  font-weight: 400;
+  color: #0e88b8;
+  font-size: 1.9rem;
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid #00000022;
+}
+
+.home__project {
+  width: 200px;
+  padding: 20px 30px 30px 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-left: 15px solid #ffc56daf;
+}
+
+.home__project-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-bottom: 5px;
+}
+
+.home__project-text {
+  padding-bottom: 20px;
+}
+
+.home__backlog-link {
+  color: #3e3e3e;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+
+  &:hover{
+    color: #e6ac55;
+  }
+}

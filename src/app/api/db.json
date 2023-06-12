@@ -9,28 +9,21 @@
       "password": "p@$$word"
     },
     {
-      "id": "bb9af4f0-1b12-4195-a2f5-62a163b3ae82",
-      "login": "asdfghjkl",
-      "first_name": "a",
-      "last_name": "a",
-      "password": "asdfghjkl"
-    },
-    {
-      "id": "5eda2ae6-5f52-4cec-a3af-2d0b9e58b681",
+      "id": "39d6ffd0-1eef-4099-8901-68ecde4a6f80",
+      "functionalities": [],
       "login": "julek",
       "first_name": "e",
       "last_name": "e",
-      "password": "julekjulek"
+      "password": "julek1",
+      "role": "Devops"
     }
   ],
   "meta": {
     "isLogged": true,
     "currentUser": {
-      "id": "5eda2ae6-5f52-4cec-a3af-2d0b9e58b681",
+      "id": "fc4dce95-6c93-42fa-b7e7-4f2b51982c9e",
       "login": "julek",
-      "first_name": "e",
-      "last_name": "e",
-      "password": "julekjulek"
+      "password": "julek1"
     }
   }
 }

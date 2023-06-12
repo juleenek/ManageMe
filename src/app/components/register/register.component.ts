@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RegisterForm } from 'src/app/models/user-form.model';
-import { FormErrors } from '../../../models/types/Errors';
-import { checkFormErrors } from '../../../utils/checkers';
-import { DefaultFormErrorsService } from '../../../services/default-form-errors.service';
+import { FormErrors } from '../../models/types/Errors';
+import { checkFormErrors } from '../../utils/checkers';
+import { DefaultFormErrorsService } from '../../services/default-form-errors.service';
 import { User } from 'src/app/models/user.model';
 import { UserApiService } from 'src/app/api/user-api.service';
 import { generateId } from 'src/app/utils/generators';
 import { Router } from '@angular/router';
 import { FormInput } from 'src/app/models/enums/form-input.enum';
+import { UserRole } from 'src/app/models/enums/role.enum';
 
 @Component({
   selector: 'app-register',
@@ -52,17 +53,20 @@ export class RegisterComponent {
     });
 
     if (this.user.status === 'VALID') {
-      this.apiService
-        .addUser({ id: generetedId, ...this.user.value } as User)
-        .subscribe(() => {
-          this.refreshUsers();
-        });
+      const user: User = {
+        id: generetedId,
+        functionalities: [],
+        ...this.user.value,
+        role: UserRole.DEVOPS,
+      } as User;
 
-      this.apiService
-        .loginUser({ id: generetedId, ...this.user.value } as User)
-        .subscribe(() => {
-          this.refreshUsers();
-        });
+      this.apiService.addUser(user as User).subscribe(() => {
+        this.refreshUsers();
+      });
+
+      this.apiService.loginUser(user as User).subscribe(() => {
+        this.refreshUsers();
+      });
       this.router.navigate(['/']);
     }
 

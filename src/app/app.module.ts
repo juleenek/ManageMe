@@ -7,7 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { AuthenticationComponent } from './components/authentication/authentication.component';
-import { RegisterComponent } from './components/form/register/register.component';
+import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormErrorMessageComponent } from './components/form/form-error-message/form-error-message.component';
 import { HttpClientModule } from '@angular/common/http';

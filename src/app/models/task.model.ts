@@ -1,4 +1,5 @@
 import { Status } from './enums/status.enum';
+import { Functionality } from './functionality.model';
 
 export interface Task {
   id: number;
@@ -6,7 +7,5 @@ export interface Task {
   description: string;
   status: Status;
   created_at: Date;
-  start_date: Date;
-  end_date: Date;
-  assigned_used_id: number;
+  functionality: Functionality;
 }
