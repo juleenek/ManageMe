@@ -14,14 +14,23 @@
       "first_name": "a",
       "last_name": "a",
       "password": "asdfghjkl"
+    },
+    {
+      "id": "5eda2ae6-5f52-4cec-a3af-2d0b9e58b681",
+      "login": "julek",
+      "first_name": "e",
+      "last_name": "e",
+      "password": "julekjulek"
     }
   ],
   "meta": {
     "isLogged": true,
     "currentUser": {
-      "id": "d84cd566-9f40-4225-ac10-9f33d4e9b3dd",
-      "login": "asdfghjkl",
-      "password": "asdfghjkl"
+      "id": "5eda2ae6-5f52-4cec-a3af-2d0b9e58b681",
+      "login": "julek",
+      "first_name": "e",
+      "last_name": "e",
+      "password": "julekjulek"
     }
   }
 }

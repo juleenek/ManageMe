@@ -6,7 +6,7 @@
       <button class="navbar__navigation">Tasks</button>
     </div>
     <div class="navbar__second">
-      <p class="navbar__name">Witaj Julia!</p>
+      <p class="navbar__name">Witaj {{ currentUser.login }}!</p>
       <button class="navbar__button" (click)="onLogout()">Logout</button>
     </div>
   </div>

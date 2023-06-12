@@ -9,12 +9,24 @@ import { MetaData } from 'src/app/models/meta.model';
 })
 export class NavbarComponent {
   meta: MetaData = {} as MetaData;
+  currentUser: any;
   constructor(private apiService: UserApiService) {}
+
+  ngOnInit(): void {
+    this.getCurrentUser();
+  }
 
   refreshMeta() {
     this.apiService.getMetaUser().subscribe((data) => {
       this.meta = data;
     });
+  }
+
+  getCurrentUser(): void {
+    this.apiService.getMetaUser().subscribe((response) => {
+      this.currentUser = response.currentUser;
+    });
+    console.log('user: ' + this.currentUser);
   }
 
   onLogout() {
