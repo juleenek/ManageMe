@@ -46,19 +46,20 @@ export class RegisterComponent {
   }
 
   onSubmit() {
+    const generetedId = generateId();
     Object.keys(this.formErrors).forEach((key) => {
       this.formErrors[key as keyof FormErrors] = false;
     });
 
     if (this.user.status === 'VALID') {
       this.apiService
-        .addUser({ id: generateId(), ...this.user.value } as User)
+        .addUser({ id: generetedId, ...this.user.value } as User)
         .subscribe(() => {
           this.refreshUsers();
         });
 
       this.apiService
-        .loginUser({ id: generateId(), ...this.user.value } as User)
+        .loginUser({ id: generetedId, ...this.user.value } as User)
         .subscribe(() => {
           this.refreshUsers();
         });

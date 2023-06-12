@@ -1,4 +1,13 @@
 <div class="navbar">
-  <img class="navbar__logo" src="../../assets/logo.png" alt="Logo">
-  <button (click)="onLogout()">Logout</button>
+  <img class="navbar__logo" src="../../assets/logo.png" alt="Logo" />
+  <div class="navbar__box">
+    <div class="navbar__first">
+      <button class="navbar__navigation">Backlog</button>
+      <button class="navbar__navigation">Tasks</button>
+    </div>
+    <div class="navbar__second">
+      <p class="navbar__name">Witaj Julia!</p>
+      <button class="navbar__button" (click)="onLogout()">Logout</button>
+    </div>
+  </div>
 </div>
