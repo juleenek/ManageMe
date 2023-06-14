@@ -9,106 +9,77 @@
       "password": "p@$$word"
     },
     {
-      "id": "39d6ffd0-1eef-4099-8901-68ecde4a6f80",
+      "id": "19ad248c-a772-413e-81df-57e67c7918ab",
       "functionalities": [
         {
+          "id": "56e1ef5d-4259-47b2-aec1-0252676b4bed",
           "name": "aaaaa",
-          "description": "aaa"
+          "description": "aaaa",
+          "status": "To do",
+          "createdAt": 1686773673092
         },
         {
-          "name": "aaaaaffff",
-          "description": "aaa"
+          "id": "c6f947fd-d956-4296-a828-6e534d219559",
+          "name": "uyku",
+          "description": "uuk",
+          "status": "To do",
+          "createdAt": 1686774522994
         },
         {
-          "name": "ttt",
-          "description": "tttt"
+          "id": "d068c0a2-23c3-40ba-968a-9845a562ed2c",
+          "name": "uyukyuyukyuyuky.  uyukyuyuky vuyuky",
+          "description": "vd",
+          "status": "To do",
+          "createdAt": 1686774537092
         },
         {
-          "name": "yrtyru6e5",
-          "description": "u65u6rr6u5"
-        },
-        {
+          "id": "8aa6da65-6cd6-4e3b-b7df-4c203fb2f7d9",
           "name": "",
-          "description": ""
-        },
-        {
-          "name": "uu",
-          "description": "uuu"
-        },
-        {
-          "name": "iii",
-          "description": "iii"
+          "description": "",
+          "status": "To do",
+          "createdAt": 1686774599192
         }
       ],
       "login": "julek",
-      "first_name": "e",
-      "last_name": "e",
+      "first_name": "a",
+      "last_name": "a",
       "password": "julek1",
       "role": "Devops"
     },
     {
-      "id": "70d78cb7-58a8-42db-8802-bac84a33ef8b",
+      "id": "52ba592e-3473-4c74-838f-dfb7ad444977",
       "functionalities": [
         {
-          "name": "a",
-          "description": "a"
+          "id": "b2fad787-2ff1-4cdd-a213-3a108a6d0561",
+          "name": "Jestem sobie funkcjonalnością",
+          "description": "adsasdsad",
+          "status": "To do",
+          "createdAt": 1686774701857
         },
         {
-          "name": "ss",
-          "description": "sasass"
+          "id": "566ab6ae-0a6e-44d0-a97b-fbfafd7626c2",
+          "name": "dsds",
+          "description": "dsds",
+          "status": "Done",
+          "createdAt": 1686775042914
         }
       ],
-      "login": "asdfghjkl",
-      "first_name": "asdfghjkl",
-      "last_name": "a",
-      "password": "asdfghjkl",
-      "role": "Devops"
-    },
-    {
-      "id": "4d5171a0-6949-49ae-83b3-f37e9f870589",
-      "functionalities": [
-        {
-          "name": "lubie fufu",
-          "description": "bardzo"
-        },
-        {
-          "name": "asdasdsa",
-          "description": "dasdasdas"
-        },
-        {
-          "name": "fff",
-          "description": "fff"
-        },
-        {
-          "name": "5yy545y45",
-          "description": "y45y45y5y4"
-        }
-      ],
-      "login": "danielek",
-      "first_name": "a",
-      "last_name": "a",
-      "password": "danielek",
+      "login": "llllllllllll",
+      "first_name": "l",
+      "last_name": "l",
+      "password": "lllllllll",
       "role": "Devops"
     }
   ],
   "meta": {
     "isLogged": true,
     "currentUser": {
-      "id": "4d5171a0-6949-49ae-83b3-f37e9f870589",
-      "functionalities": [
-        {
-          "name": "lubie fufu",
-          "description": "bardzo"
-        },
-        {
-          "name": "asdasdsa",
-          "description": "dasdasdas"
-        }
-      ],
-      "login": "danielek",
-      "first_name": "a",
-      "last_name": "a",
-      "password": "danielek",
+      "id": "52ba592e-3473-4c74-838f-dfb7ad444977",
+      "functionalities": [],
+      "login": "llllllllllll",
+      "first_name": "l",
+      "last_name": "l",
+      "password": "lllllllll",
       "role": "Devops"
     }
   }

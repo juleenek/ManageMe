@@ -1,0 +1,24 @@
+$green-color: #08a615ad;
+$blue-color: #133de6ad;
+
+.status {
+  font-weight: 600;
+  height: 22px;
+  padding: 0 9px;
+  border-radius: 3px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.status__todo {
+  border: 1px solid $green-color;
+  background-color: #beffcb8d;
+  color: $green-color;
+}
+
+.status__other {
+  border: 1px solid $blue-color;
+  background-color: #bee8ff8d;
+  color: $blue-color;
+}

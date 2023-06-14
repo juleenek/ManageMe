@@ -13,6 +13,7 @@ import { FormErrorMessageComponent } from './components/forms/form-error-message
 import { HttpClientModule } from '@angular/common/http';
 import { BacklogComponent } from './pages//backlog/backlog.component';
 import { FunctionalityFormComponent } from './components/forms/functionality-form/functionality-form.component';
+import { StatusComponent } from './components/status/status.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FunctionalityFormComponent } from './components/forms/functionality-for
     FormErrorMessageComponent,
     BacklogComponent,
     FunctionalityFormComponent,
+    StatusComponent,
   ],
   imports: [
     BrowserModule,

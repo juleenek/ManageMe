@@ -2,10 +2,10 @@ import { Status } from './enums/status.enum';
 import { Task } from './task.model';
 
 export interface Functionality {
-  id: number;
+  id: string;
   name: string;
   description: string;
-  createdAt: Date;
+  createdAt: number;
   status: Status;
   tasks: Task[];
 }

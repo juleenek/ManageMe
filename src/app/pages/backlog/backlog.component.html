@@ -22,7 +22,11 @@
         src="../../../assets/func-icon.png"
         alt="Icon"
       />
-      <p><span class="backlog__index">{{ indexOfelement + 1 }}.</span> {{ functionality.name }}</p>
+      <p>
+        <span class="backlog__index">{{ indexOfelement + 1 }}.</span>
+        {{ functionality.name }}
+      </p>
+      <app-status [status]="functionality.status"></app-status>
     </div>
   </div>
 </div>

@@ -5,6 +5,8 @@ import { FunctionalityForm } from 'src/app/models/form.model';
 import { UserApiService } from 'src/app/services/user-api.service';
 import { User } from 'src/app/models/user.model';
 import { Functionality } from 'src/app/models/functionality.model';
+import { generateId } from 'src/app/utils/generators';
+import { Status } from 'src/app/models/enums/status.enum';
 
 @Component({
   selector: 'app-functionality-form',
@@ -47,7 +49,10 @@ export class FunctionalityFormComponent {
 
   onSubmit(): void {
     const functionality: Functionality = {
+      id: generateId(),
       ...this.functionality.value,
+      status: Status.TODO,
+      createdAt: Date.now(),
     } as Functionality;
 
     this.currentUser.functionalities.push(functionality);

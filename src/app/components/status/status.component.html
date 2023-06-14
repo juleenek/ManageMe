@@ -1,0 +1,7 @@
+<div *ngIf="status === Status.DONE" class="status status__todo">
+  <p>{{ status }}</p>
+</div>
+
+<div *ngIf="!(status === Status.DONE)" class="status status__other">
+  <p>{{ status }}</p>
+</div>
