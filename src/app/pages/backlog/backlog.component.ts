@@ -18,6 +18,7 @@ export class BacklogComponent {
 
   changeFormActive(isActive: boolean) {
     this.isFormActive = isActive;
+    this.getCurrentUser();
   }
 
   getCurrentUser(): void {
