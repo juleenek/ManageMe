@@ -9,12 +9,21 @@
   padding-bottom: 20px;
   border-bottom: 1.5px solid #00000022;
 }
-
+.home__project-container {
+  background-color: #ebebeb9b;
+  padding: 30px;
+}
 .home__project {
+  background-color: #ffffff;
   width: 200px;
   padding: 20px 30px 30px 30px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-left: 15px solid #ffc56daf;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-left: 15px solid #ff8181;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 2.5px 2.5px 2.8px;
+  }
 }
 
 .home__project-title {
@@ -33,7 +42,7 @@
   font-weight: 600;
   font-size: 0.8rem;
 
-  &:hover{
-    color: #e6ac55;
+  &:hover {
+    color: #c65e5e;
   }
 }
