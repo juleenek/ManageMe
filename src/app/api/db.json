@@ -34,6 +34,10 @@
         {
           "name": "uu",
           "description": "uuu"
+        },
+        {
+          "name": "iii",
+          "description": "iii"
         }
       ],
       "login": "julek",
@@ -41,17 +45,62 @@
       "last_name": "e",
       "password": "julek1",
       "role": "Devops"
+    },
+    {
+      "id": "70d78cb7-58a8-42db-8802-bac84a33ef8b",
+      "functionalities": [
+        {
+          "name": "a",
+          "description": "a"
+        },
+        {
+          "name": "ss",
+          "description": "sasass"
+        }
+      ],
+      "login": "asdfghjkl",
+      "first_name": "asdfghjkl",
+      "last_name": "a",
+      "password": "asdfghjkl",
+      "role": "Devops"
+    },
+    {
+      "id": "4d5171a0-6949-49ae-83b3-f37e9f870589",
+      "functionalities": [
+        {
+          "name": "lubie fufu",
+          "description": "bardzo"
+        },
+        {
+          "name": "asdasdsa",
+          "description": "dasdasdas"
+        }
+      ],
+      "login": "danielek",
+      "first_name": "a",
+      "last_name": "a",
+      "password": "danielek",
+      "role": "Devops"
     }
   ],
   "meta": {
     "isLogged": true,
     "currentUser": {
-      "id": "39d6ffd0-1eef-4099-8901-68ecde4a6f80",
-      "functionalities": [],
-      "login": "julek",
-      "first_name": "e",
-      "last_name": "e",
-      "password": "julek1",
+      "id": "4d5171a0-6949-49ae-83b3-f37e9f870589",
+      "functionalities": [
+        {
+          "name": "lubie fufu",
+          "description": "bardzo"
+        },
+        {
+          "name": "asdasdsa",
+          "description": "dasdasdas"
+        }
+      ],
+      "login": "danielek",
+      "first_name": "a",
+      "last_name": "a",
+      "password": "danielek",
       "role": "Devops"
     }
   }

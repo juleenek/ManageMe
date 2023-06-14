@@ -9,7 +9,20 @@
       Dodaj funkcjonalność
     </button>
   </div>
-  <div class="backlog__box" *ngFor="let functionality of currentUser.functionalities">
-    <p>{{functionality.name}}</p>
+  <div class="backlog__box">
+    <div
+      class="backlog__functionality"
+      *ngFor="
+        let functionality of currentUser.functionalities;
+        let indexOfelement = index
+      "
+    >
+      <img
+        class="backlog__icon"
+        src="../../../assets/func-icon.png"
+        alt="Icon"
+      />
+      <p><span class="backlog__index">{{ indexOfelement + 1 }}.</span> {{ functionality.name }}</p>
+    </div>
   </div>
 </div>

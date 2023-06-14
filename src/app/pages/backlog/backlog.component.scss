@@ -24,3 +24,42 @@
   font-size: 1.3rem;
   padding-right: 100px;
 }
+
+.backlog__box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #dee1ea64;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.backlog__functionality {
+  background-color: #ffffff;
+  padding: 2px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.2s;
+
+  & p {
+    font-size: 0.8rem;
+  }
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
+  }
+}
+
+.backlog__icon {
+  width: 22px;
+  height: 100%;
+  padding-right: 15px;
+}
+
+.backlog__index {
+  font-weight: 600;
+  color: #3d4b63ca;
+  padding-right: 15px;
+}
