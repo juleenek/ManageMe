@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class BacklogComponent {
   isFormActive: boolean = false;
 
-  toggleFormClick() {
-    if (!this.isFormActive) this.isFormActive = true;
+  changeFormActive(isActive: boolean) {
+    this.isFormActive = isActive;
   }
 }

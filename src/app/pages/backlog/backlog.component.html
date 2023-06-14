@@ -1,6 +1,9 @@
 <div class="backlog__container">
-  <app-functionality-form></app-functionality-form>
-  <button (click)="toggleFormClick()" class="backlog__button">
+  <app-functionality-form
+    *ngIf="isFormActive"
+    (formActiveChangeEvent)="changeFormActive($event)"
+  ></app-functionality-form>
+  <button (click)="changeFormActive(true)" class="backlog__button">
     Dodaj funkcjonalność
   </button>
 </div>

@@ -1,5 +1,11 @@
 <div class="functionality-form__container">
   <div class="functionality-form__box">
+    <img
+      class="functionality-form__close-icon"
+      src="../../../../assets/close.png"
+      alt="Close icon"
+      (click)="changeIsFormActive(false)"
+    />
     <p class="functionality-form__title">Dodawanie funkcjonalności</p>
     <div class="functionality-form__project-box">
       <label class="functionality-form__label">Projekt:</label>
@@ -20,7 +26,12 @@
       ></textarea>
     </form>
     <div class="functionality-form__buttons-box">
-      <button class="functionality-form__cancel-btn">Anuluj</button>
+      <button
+        (click)="changeIsFormActive(false)"
+        class="functionality-form__cancel-btn"
+      >
+        Anuluj
+      </button>
       <button class="functionality-form__create-btn">Utwórz</button>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Output, EventEmitter } from '@angular/core';
 import { FunctionalityForm } from 'src/app/models/form.model';
 
 @Component({
@@ -9,4 +10,10 @@ import { FunctionalityForm } from 'src/app/models/form.model';
 })
 export class FunctionalityFormComponent {
   functionality!: FormGroup<FunctionalityForm>;
+
+  @Output() formActiveChangeEvent = new EventEmitter<boolean>();
+
+  changeIsFormActive(isActive: boolean) {
+    this.formActiveChangeEvent.emit(isActive);
+  }
 }
