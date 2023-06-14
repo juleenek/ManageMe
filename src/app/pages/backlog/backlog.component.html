@@ -3,7 +3,13 @@
     *ngIf="isFormActive"
     (formActiveChangeEvent)="changeFormActive($event)"
   ></app-functionality-form>
-  <button (click)="changeFormActive(true)" class="backlog__button">
-    Dodaj funkcjonalność
-  </button>
+  <div class="backlog__header-box">
+    <h3 class="backlog__title">Backlog</h3>
+    <button (click)="changeFormActive(true)" class="backlog__button">
+      Dodaj funkcjonalność
+    </button>
+  </div>
+  <div class="backlog__box" *ngFor="let functionality of currentUser.functionalities">
+    <p>{{functionality.name}}</p>
+  </div>
 </div>

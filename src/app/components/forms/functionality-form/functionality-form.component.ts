@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Output, EventEmitter } from '@angular/core';
 import { FunctionalityForm } from 'src/app/models/form.model';
-import { Router } from '@angular/router';
 import { UserApiService } from 'src/app/services/user-api.service';
-import { MetaData } from 'src/app/models/meta.model';
 import { User } from 'src/app/models/user.model';
+import { Functionality } from 'src/app/models/functionality.model';
 
 @Component({
   selector: 'app-functionality-form',
@@ -19,8 +18,7 @@ export class FunctionalityFormComponent {
 
   constructor(
     private readonly formBuilder: FormBuilder,
-    private apiService: UserApiService,
-    private router: Router
+    private apiService: UserApiService
   ) {}
 
   ngOnInit(): void {
@@ -45,5 +43,18 @@ export class FunctionalityFormComponent {
           this.currentUser = response;
         });
     });
+  }
+
+  onSubmit(): void {
+    const functionality: Functionality = {
+      ...this.functionality.value,
+    } as Functionality;
+
+    this.currentUser.functionalities.push(functionality);
+    this.apiService
+      .updateFunctionalities(this.currentUser.id, this.currentUser)
+      .subscribe();
+
+    this.changeIsFormActive(false);
   }
 }

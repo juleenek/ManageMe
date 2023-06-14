@@ -55,4 +55,8 @@ export class UserApiService {
   getUserById(id: string): Observable<any> {
     return this.http.get<any>(`/api/users/${id}`);
   }
+
+  updateFunctionalities(id: string, user: User): Observable<any> {
+    return this.http.patch<any>(`/api/users/${id}`, user);
+  }
 }

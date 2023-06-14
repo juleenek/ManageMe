@@ -8,4 +8,19 @@
 
 .backlog__button {
   @include second-blue-button;
+  height: 100%;
+}
+
+.backlog__header-box {
+  display: flex;
+  align-items: center;
+  padding: 0 0 10px 20px;
+  border-bottom: 1.5px solid #00000022;
+}
+
+.backlog__title {
+  font-weight: 500;
+  color: #3d4b63;
+  font-size: 1.3rem;
+  padding-right: 100px;
 }

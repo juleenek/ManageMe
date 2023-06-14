@@ -11,7 +11,7 @@
       <label class="functionality-form__label">Projekt:</label>
       <div class="functionality-form__tile">
         <img src="../../../../assets/icon.png" alt="" />
-        <p>Projekt Angular {{currentUser.first_name}}</p>
+        <p>Projekt Angular</p>
       </div>
     </div>
     <form [formGroup]="functionality" class="functionality-form__form">
@@ -32,7 +32,7 @@
       >
         Anuluj
       </button>
-      <button class="functionality-form__create-btn">Utwórz</button>
+      <button (click)="onSubmit()" class="functionality-form__create-btn">Utwórz</button>
     </div>
   </div>
 </div>
