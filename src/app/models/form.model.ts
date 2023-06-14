@@ -11,3 +11,8 @@ export type LoginForm = {
   login: FormControl<string>;
   password: FormControl<string>;
 };
+
+export type FunctionalityForm = {
+  name: FormControl<string>;
+  description: FormControl<string>;
+}

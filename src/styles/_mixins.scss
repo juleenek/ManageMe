@@ -43,6 +43,46 @@
   }
 }
 
+@mixin cancel-button {
+  align-items: center;
+  appearance: none;
+  background-color: #e6e6e6;
+  border-radius: 100px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #777777;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, background-position 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-position: -10px -10px;
+  }
+
+  &:focus:not(:active) {
+    box-shadow: rgba(165, 165, 165, 0.842) 0 0 0 0.125em;
+  }
+}
+
 @mixin auth-form-input {
   width: 250px;
   height: 30px;
@@ -55,4 +95,10 @@
   font-size: 0.8rem;
   font-weight: 300;
   padding: 15px 0 5px 0;
+}
+
+@mixin font-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #596068;
 }

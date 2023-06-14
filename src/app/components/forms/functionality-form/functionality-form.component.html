@@ -1,0 +1,27 @@
+<div class="functionality-form__container">
+  <div class="functionality-form__box">
+    <p class="functionality-form__title">Dodawanie funkcjonalności</p>
+    <div class="functionality-form__project-box">
+      <label class="functionality-form__label">Projekt:</label>
+      <div class="functionality-form__tile">
+        <img src="../../../../assets/icon.png" alt="" />
+        <p>Projekt Angular</p>
+      </div>
+    </div>
+    <form [formGroup]="functionality" class="functionality-form__form">
+      <label class="functionality-form__label"
+        >Nazwa <span class="red">*</span></label
+      >
+      <input formControlName="name" />
+      <label class="functionality-form__label">Opis</label>
+      <textarea
+        class="functionality-form__input-desc"
+        formControlName="description"
+      ></textarea>
+    </form>
+    <div class="functionality-form__buttons-box">
+      <button class="functionality-form__cancel-btn">Anuluj</button>
+      <button class="functionality-form__create-btn">Utwórz</button>
+    </div>
+  </div>
+</div>

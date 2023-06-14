@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { RegisterForm } from 'src/app/models/user-form.model';
+import { RegisterForm } from 'src/app/models/form.model';
 import { FormErrors } from '../../models/types/Errors';
 import { checkFormErrors } from '../../utils/checkers';
 import { DefaultFormErrorsService } from '../../services/default-form-errors.service';

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { UserApiService } from 'src/app/api/user-api.service';
 import { FormInput } from 'src/app/models/enums/form-input.enum';
 import { FormErrors } from 'src/app/models/types/Errors';
-import { LoginForm } from 'src/app/models/user-form.model';
+import { LoginForm } from 'src/app/models/form.model';
 import { User } from 'src/app/models/user.model';
 import { DefaultFormErrorsService } from 'src/app/services/default-form-errors.service';
 import { generateId } from 'src/app/utils/generators';

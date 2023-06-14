@@ -9,9 +9,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { AuthenticationComponent } from './components/authentication/authentication.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormErrorMessageComponent } from './components/form/form-error-message/form-error-message.component';
+import { FormErrorMessageComponent } from './components/forms/form-error-message/form-error-message.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BacklogComponent } from './pages//backlog/backlog.component';
+import { FunctionalityFormComponent } from './components/forms/functionality-form/functionality-form.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BacklogComponent } from './pages//backlog/backlog.component';
     RegisterComponent,
     FormErrorMessageComponent,
     BacklogComponent,
+    FunctionalityFormComponent,
   ],
   imports: [
     BrowserModule,

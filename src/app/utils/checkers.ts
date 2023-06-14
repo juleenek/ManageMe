@@ -1,4 +1,4 @@
-import { RegisterForm } from '../models/user-form.model';
+import { RegisterForm } from '../models/form.model';
 import { FormErrors } from '../models/types/Errors';
 
 export const checkFormErrors = (
