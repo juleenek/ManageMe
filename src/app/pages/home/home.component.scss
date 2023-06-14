@@ -9,21 +9,31 @@
   padding-bottom: 20px;
   border-bottom: 1.5px solid #00000022;
 }
+
 .home__project-container {
-  background-color: #ebebeb9b;
+  background-color: #ebebeb85;
   padding: 30px;
 }
+
 .home__project {
   background-color: #ffffff;
+  position: relative;
   width: 200px;
   padding: 20px 30px 30px 30px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border-left: 15px solid #ff8181;
+  border-left: 15px solid #ed6040ef;
   border-radius: 5px;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.19) 2.5px 2.5px 2.8px;
   }
+}
+
+.home__project-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 35px;
 }
 
 .home__project-title {
@@ -37,12 +47,12 @@
 }
 
 .home__backlog-link {
-  color: #3e3e3e;
+  color: #2c2c2c;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.8rem;
 
   &:hover {
-    color: #c65e5e;
+    color: #f7c444;
   }
 }

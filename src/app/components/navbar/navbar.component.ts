@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserApiService } from 'src/app/api/user-api.service';
 import { MetaData } from 'src/app/models/meta.model';
 
@@ -10,6 +11,7 @@ import { MetaData } from 'src/app/models/meta.model';
 export class NavbarComponent {
   meta: MetaData = {} as MetaData;
   currentUser: any;
+
   constructor(private apiService: UserApiService) {}
 
   ngOnInit(): void {

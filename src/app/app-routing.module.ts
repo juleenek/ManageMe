@@ -5,9 +5,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { authGuard } from './guards/auth.guard';
 import { authPagesGuard } from './guards/auth-pages.guard';
+import { BacklogComponent } from './pages/backlog/backlog.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [authGuard] },
+  { path: 'backlog', component: BacklogComponent, canActivate: [authGuard] },
   {
     path: 'login',
     component: LoginComponent,
