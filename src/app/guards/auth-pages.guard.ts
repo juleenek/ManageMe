@@ -1,6 +1,6 @@
 import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
-import { UserApiService } from '../api/user-api.service';
+import { UserApiService } from '../services/user-api.service';
 import { MetaData } from '../models/meta.model';
 import { map } from 'rxjs/operators';
 

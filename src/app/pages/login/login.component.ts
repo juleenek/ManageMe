@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UserApiService } from 'src/app/api/user-api.service';
+import { UserApiService } from 'src/app/services/user-api.service';
 import { FormInput } from 'src/app/models/enums/form-input.enum';
 import { FormErrors } from 'src/app/models/types/Errors';
 import { LoginForm } from 'src/app/models/form.model';
@@ -50,11 +50,9 @@ export class LoginComponent {
     );
 
     if (loggedUser) {
-      this.apiService
-        .loginUser({ id: generateId(), ...this.user.value } as User)
-        .subscribe(() => {
-          this.refreshUsers();
-        });
+      this.apiService.loginUser(loggedUser).subscribe(() => {
+        this.refreshUsers();
+      });
       this.router.navigate(['/']);
     } else {
       this.formErrors.isLoginPageError = true;

@@ -1,0 +1,11 @@
+@use "sass:map";
+@import "../../../../src/styles/variables";
+@import "../../../../src/styles/mixins";
+
+.backlog__container {
+  padding: 30px 130px;
+}
+
+.backlog__button {
+  @include second-blue-button;
+}

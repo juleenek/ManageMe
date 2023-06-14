@@ -5,7 +5,7 @@ import { FormErrors } from '../../models/types/Errors';
 import { checkFormErrors } from '../../utils/checkers';
 import { DefaultFormErrorsService } from '../../services/default-form-errors.service';
 import { User } from 'src/app/models/user.model';
-import { UserApiService } from 'src/app/api/user-api.service';
+import { UserApiService } from 'src/app/services/user-api.service';
 import { generateId } from 'src/app/utils/generators';
 import { Router } from '@angular/router';
 import { FormInput } from 'src/app/models/enums/form-input.enum';

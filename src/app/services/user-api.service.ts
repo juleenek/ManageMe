@@ -51,4 +51,8 @@ export class UserApiService {
   getMetaUser(): Observable<any> {
     return this.http.get<any>('/api/meta');
   }
+
+  getUserById(id: string): Observable<any> {
+    return this.http.get<any>(`/api/users/${id}`);
+  }
 }

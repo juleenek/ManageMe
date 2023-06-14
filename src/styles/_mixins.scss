@@ -5,9 +5,10 @@
   align-items: center;
   appearance: none;
   background-color: #5ab9d8;
-  background-image: linear-gradient(1deg, #0b6cc2, #3ec4f1 99%);
+  background-image: linear-gradient(1deg, #172fe1, #3ec4f1 99%);
   background-size: calc(100% + 20px) calc(100% + 20px);
   border-radius: 100px;
+  font-weight: 500;
   border-width: 0;
   box-sizing: border-box;
   color: #ffffff;
@@ -43,11 +44,50 @@
   }
 }
 
-@mixin cancel-button {
+@mixin second-blue-button {
   align-items: center;
   appearance: none;
+  font-weight: 500;
+  background-color: #5498e6;
+  border-radius: 10px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 8px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #1dacea;
+    box-shadow: rgba(55, 55, 98, 0.523) 0px 2px 7px -1px,
+      rgba(0, 0, 0, 0.65) 0px 1px 6 -1px;
+  }
+}
+
+@mixin cancel-button {
+  align-items: center;
+  font-weight: 500;
+  appearance: none;
   background-color: #e6e6e6;
-  border-radius: 100px;
+  border-radius: 10px;
   border-width: 0;
   box-sizing: border-box;
   color: #777777;

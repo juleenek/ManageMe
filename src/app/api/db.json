@@ -21,9 +21,13 @@
   "meta": {
     "isLogged": true,
     "currentUser": {
-      "id": "cdc0a16b-52ae-42d7-a0dd-e4bbefe6d00b",
+      "id": "39d6ffd0-1eef-4099-8901-68ecde4a6f80",
+      "functionalities": [],
       "login": "julek",
-      "password": "julek1"
+      "first_name": "e",
+      "last_name": "e",
+      "password": "julek1",
+      "role": "Devops"
     }
   }
 }

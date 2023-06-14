@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserApiService } from 'src/app/api/user-api.service';
+import { UserApiService } from 'src/app/services/user-api.service';
 import { MetaData } from 'src/app/models/meta.model';
 
 @Component({
