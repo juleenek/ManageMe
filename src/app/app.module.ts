@@ -15,6 +15,7 @@ import { BacklogComponent } from './pages//backlog/backlog.component';
 import { FunctionalityFormComponent } from './components/forms/functionality-form/functionality-form.component';
 import { StatusComponent } from './components/status/status.component';
 import { FunctionalityDetailsComponent } from './components/functionality-details/functionality-details.component';
+import { TaskFormComponent } from './components/task-form/task-form.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FunctionalityDetailsComponent } from './components/functionality-detail
     FunctionalityFormComponent,
     StatusComponent,
     FunctionalityDetailsComponent,
+    TaskFormComponent,
   ],
   imports: [
     BrowserModule,

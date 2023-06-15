@@ -177,3 +177,9 @@
   font-size: 1.3rem;
   font-weight: 500;
 }
+
+@mixin list-container {
+  background-color: #dee1ea64;
+  padding: 20px;
+  border-radius: 10px;
+}

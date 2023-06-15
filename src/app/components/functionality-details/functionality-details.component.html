@@ -7,10 +7,19 @@
       (click)="closeDetails()"
     />
     <h4 class="functionality-details__title">{{ functionality.name }}</h4>
-    <app-status [status]="functionality.status"></app-status>
-    <p>Opis</p>
-    <p>{{ functionality.description }}</p>
-    <p>Tasks</p>
-    <p>Zadanie</p>
+    <p>{{ createdDate }}</p>
+    <app-status
+      class="functionality-details__status"
+      [status]="functionality.status"
+    ></app-status>
+    <p class="functionality-details__sub-title">Opis</p>
+    <p class="functionality-details__description">
+      {{ functionality.description }}
+    </p>
+    <div class="functionality-details__tasks-header">
+      <p class="functionality-details__sub-title">Tasks</p>
+      <a href="" class="functionality-details__task-add">Dodaj zadanie</a>
+    </div>
+    <div class="functionality-details__tasks"></div>
   </div>
 </div>

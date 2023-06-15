@@ -26,13 +26,11 @@
 }
 
 .backlog__box {
+  @include list-container;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: #dee1ea64;
-  padding: 20px;
   margin-top: 20px;
-  border-radius: 10px;
 }
 
 .backlog__functionality {
@@ -45,6 +43,7 @@
 
   & p {
     font-size: 0.8rem;
+    margin-right: 25px;
   }
 
   &:hover {
