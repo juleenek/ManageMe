@@ -1,5 +1,6 @@
 $green-color: #08a615ad;
 $blue-color: #133de6ad;
+$gray-color: #888a92c6;
 
 .status {
   font-weight: 600;
@@ -17,11 +18,16 @@ $blue-color: #133de6ad;
   color: $green-color;
 }
 
-.status__progress,
-.status__todo {
+.status__progress {
   border: 1px solid $blue-color;
   background-color: #bee8ff8d;
   color: $blue-color;
+}
+
+.status__todo {
+  border: 1px solid $gray-color;
+  background-color: #f0f0f08d;
+  color: $gray-color;
 }
 
 .status__done {

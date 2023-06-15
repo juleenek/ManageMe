@@ -12,17 +12,18 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .task-details__header {
   display: flex;
   align-items: center;
+  padding-top: 10px;
 }
 
 .task-details__title {
   @include lightbox-title;
-  margin: 20px 0 8px 0;
+  margin: 8px 0;
 }
 
 .task-details__task-icon {
@@ -31,7 +32,7 @@
   padding-right: 20px;
 }
 
-.functionality-details__status {
+.task-details__status {
   margin-bottom: 30px;
 }
 
@@ -47,4 +48,24 @@
 .task-details__description {
   line-height: 20px;
   width: 400px;
+  padding-bottom: 20px;
+}
+
+.task-details__status-select {
+  width: 130px;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.task-details__status-box {
+  display: flex;
+  gap: 10px;
+}
+
+.task-details__status-element {
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 3px;
+  }
 }

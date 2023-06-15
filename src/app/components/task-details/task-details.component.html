@@ -15,14 +15,25 @@
     </div>
     <p>{{ createdDate }}</p>
     <app-status
-      class="functionality-details__status"
-      [status]="functionality.status"
+      class="task-details__status"
+      [status]="task.status"
     ></app-status>
     <div class="task-details__under-header">
       <p class="task-details__sub-title">Opis</p>
       <p class="task-details__description">
         {{ task.description }}
       </p>
+      <div class="task-details__status">
+        <p class="task-details__sub-title">Zmiana statusu zadania</p>
+        <div class="task-details__status-box">
+          <app-status
+            class="task-details__status-element"
+            *ngFor="let status of Status | keyvalue"
+            [status]="status.value"
+            (click)="onStatusClick(status.value)"
+          ></app-status>
+        </div>
+      </div>
     </div>
   </div>
 </div>
