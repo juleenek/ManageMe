@@ -33,7 +33,21 @@
             class="functionality-details__task"
             *ngFor="let task of functionality.tasks; let indexOfelement = index"
           >
-            <p>{{ indexOfelement }} {{ task.name }}</p>
+            <img
+              class="functionality-details__task-icon"
+              src="../../../assets/task-icon.png"
+              alt="Icon"
+            />
+            <p>
+              <span class="functionality-details__task-index"
+                >{{ indexOfelement + 1 }}.</span
+              >
+              {{ task.name }}
+            </p>
+            <app-status
+              class="functionality-details__task-status"
+              [status]="task.status"
+            ></app-status>
           </div>
         </div>
       </div>

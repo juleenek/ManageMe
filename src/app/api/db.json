@@ -31,6 +31,59 @@
               "description": "",
               "status": "To do",
               "createdAt": 1686842552930
+            },
+            {
+              "id": "cd7ad66b-2a01-49ac-8727-eb005b6b4cec",
+              "name": "wqrwwr",
+              "description": "",
+              "status": "To do",
+              "createdAt": 1686843262257
+            },
+            {
+              "id": "1faaa546-8eac-48f4-8143-6eab1dd70a98",
+              "name": "yfkyf",
+              "description": "fyiyf",
+              "status": "To do",
+              "createdAt": 1686843881855
+            }
+          ]
+        },
+        {
+          "id": "7f5eb3d3-c91c-4b58-bfb5-648fe1d352e9",
+          "name": "asrdfjgkh",
+          "description": "",
+          "status": "To do",
+          "createdAt": 1686842904757,
+          "tasks": [
+            {
+              "id": "002eb701-50e8-4002-bcec-055d12bff485",
+              "name": "asddrt",
+              "description": "wqer",
+              "status": "To do",
+              "createdAt": 1686843014662
+            }
+          ]
+        },
+        {
+          "id": "413b238e-0619-4c63-95ca-4075afa97774",
+          "name": "Nowa funkcjonalność",
+          "description": "Jako użytkownik (klient), na stronie produktu chcę widzieć przycisk dodaj do koszyka. Obok przycisku wybór ilości paczek. Chcę, żeby stan koszyka nie przepadał po przeładowaniu strony (localStorage). Po naciśnięciu przycisku, chcę żeby pojawił się komunikat dodano {ilość paczek} do koszyk.",
+          "status": "To do",
+          "createdAt": 1686843910314,
+          "tasks": [
+            {
+              "id": "9a915bea-e494-4168-b5b4-716ef561df04",
+              "name": "ruchanie",
+              "description": "heheh wiecie o co cho",
+              "status": "To do",
+              "createdAt": 1686843940471
+            },
+            {
+              "id": "11088249-9d9f-442b-8b0b-d7f6a78ac6b9",
+              "name": "esrs",
+              "description": "sesss",
+              "status": "To do",
+              "createdAt": 1686843953767
             }
           ]
         }

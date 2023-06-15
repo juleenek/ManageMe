@@ -29,7 +29,6 @@ export class BacklogComponent {
         .getUserById(response.currentUser.id)
         .subscribe((response) => {
           this.currentUser = response;
-          this.onSelect(this.currentUser.functionalities[0]);
         });
     });
   }

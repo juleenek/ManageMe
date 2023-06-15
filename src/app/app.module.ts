@@ -16,6 +16,7 @@ import { FunctionalityFormComponent } from './components/forms/functionality-for
 import { StatusComponent } from './components/status/status.component';
 import { FunctionalityDetailsComponent } from './components/functionality-details/functionality-details.component';
 import { TaskFormComponent } from './components/forms/task-form/task-form.component';
+import { TaskDetailsComponent } from './components/task-details/task-details.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { TaskFormComponent } from './components/forms/task-form/task-form.compon
     StatusComponent,
     FunctionalityDetailsComponent,
     TaskFormComponent,
+    TaskDetailsComponent,
   ],
   imports: [
     BrowserModule,
