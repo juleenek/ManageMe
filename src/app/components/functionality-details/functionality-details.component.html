@@ -1,0 +1,16 @@
+<div class="functionality-details__container">
+  <div class="functionality-details__box">
+    <img
+      class="functionality-details__close-icon"
+      src="../../../../assets/close.png"
+      alt="Close icon"
+      (click)="closeDetails()"
+    />
+    <h4 class="functionality-details__title">{{ functionality.name }}</h4>
+    <app-status [status]="functionality.status"></app-status>
+    <p>Opis</p>
+    <p>{{ functionality.description }}</p>
+    <p>Tasks</p>
+    <p>Zadanie</p>
+  </div>
+</div>

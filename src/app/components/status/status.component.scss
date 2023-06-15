@@ -9,16 +9,30 @@ $blue-color: #133de6ad;
   margin-left: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.status__todo {
+.status__done {
   border: 1px solid $green-color;
   background-color: #beffcb8d;
   color: $green-color;
 }
 
-.status__other {
+.status__progress,
+.status__todo {
   border: 1px solid $blue-color;
   background-color: #bee8ff8d;
   color: $blue-color;
+}
+
+.status__done {
+  width: 30px;
+}
+
+.status__todo {
+  width: 35px;
+}
+
+.status__progress {
+  width: 65px;
 }

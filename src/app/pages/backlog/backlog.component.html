@@ -3,6 +3,11 @@
     *ngIf="isFormActive"
     (formActiveChangeEvent)="changeFormActive($event)"
   ></app-functionality-form>
+  <app-functionality-details
+    (closeDetailsEvent)="onSelect($event)"
+    *ngIf="selectedFunctionality"
+    [functionality]="selectedFunctionality"
+  ></app-functionality-details>
   <div class="backlog__header-box">
     <h3 class="backlog__title">Backlog</h3>
     <button (click)="changeFormActive(true)" class="backlog__button">
@@ -16,6 +21,7 @@
         let functionality of currentUser.functionalities;
         let indexOfelement = index
       "
+      (click)="onSelect(functionality)"
     >
       <img
         class="backlog__icon"

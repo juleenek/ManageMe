@@ -1,7 +1,11 @@
-<div *ngIf="status === Status.DONE" class="status status__todo">
+<div *ngIf="status === Status.DONE" class="status status__done">
   <p>{{ status }}</p>
 </div>
 
-<div *ngIf="!(status === Status.DONE)" class="status status__other">
+<div *ngIf="status === Status.TODO" class="status status__todo">
+  <p>{{ status }}</p>
+</div>
+
+<div *ngIf="status === Status.IN_PROGRESS" class="status status__progress">
   <p>{{ status }}</p>
 </div>

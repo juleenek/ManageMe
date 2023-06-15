@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BacklogComponent } from './pages//backlog/backlog.component';
 import { FunctionalityFormComponent } from './components/forms/functionality-form/functionality-form.component';
 import { StatusComponent } from './components/status/status.component';
+import { FunctionalityDetailsComponent } from './components/functionality-details/functionality-details.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { StatusComponent } from './components/status/status.component';
     BacklogComponent,
     FunctionalityFormComponent,
     StatusComponent,
+    FunctionalityDetailsComponent,
   ],
   imports: [
     BrowserModule,

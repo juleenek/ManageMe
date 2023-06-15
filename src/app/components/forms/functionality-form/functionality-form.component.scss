@@ -3,27 +3,13 @@
 @import "../../../../../src/styles/mixins";
 
 .functionality-form__container {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  z-index: 10;
-  background-color: #15467e34;
+  @include lightbox-container;
 }
 
 .functionality-form__box {
-  position: relative;
-  background-color: #ffffff;
+  @include lightbox-box;
   width: 600px;
   height: 450px;
-  border-radius: 8px;
-  box-shadow: rgba(50, 50, 93, 0.435) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  padding: 10px 50px;
 }
 
 .functionality-form__form {
@@ -46,8 +32,7 @@
 }
 
 .functionality-form__title {
-  font-size: 1.3rem;
-  font-weight: 500;
+  @include lightbox-title;
 }
 
 .functionality-form__label {
@@ -91,8 +76,5 @@
 }
 
 .functionality-form__close-icon {
-  position: absolute;
-  right: 25px;
-  top: 20px;
-  width: 15px;
+  @include close-icon;
 }

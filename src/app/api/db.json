@@ -52,8 +52,8 @@
         {
           "id": "b2fad787-2ff1-4cdd-a213-3a108a6d0561",
           "name": "Jestem sobie funkcjonalnością",
-          "description": "adsasdsad",
-          "status": "To do",
+          "description": "Jako użytkownik (klient), na stronie produktu chcę widzieć przycisk dodaj do koszyka. Obok przycisku wybór ilości paczek. Chcę, żeby stan koszyka nie przepadał po przeładowaniu strony (localStorage). Po naciśnięciu przycisku, chcę żeby pojawił się komunikat dodano {ilość paczek} do koszyk.",
+          "status": "In progress",
           "createdAt": 1686774701857
         },
         {
@@ -61,6 +61,13 @@
           "name": "dsds",
           "description": "dsds",
           "status": "Done",
+          "createdAt": 1686775042914
+        },
+        {
+          "id": "566ab6ae-0a6e-44d0-a97b-fbfafd7626c2",
+          "name": "dsds",
+          "description": "dsds",
+          "status": "To do",
           "createdAt": 1686775042914
         }
       ],

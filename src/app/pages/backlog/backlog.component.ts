@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Functionality } from 'src/app/models/functionality.model';
 import { User } from 'src/app/models/user.model';
 import { UserApiService } from 'src/app/services/user-api.service';
 
@@ -10,6 +11,7 @@ import { UserApiService } from 'src/app/services/user-api.service';
 export class BacklogComponent {
   isFormActive: boolean = false;
   currentUser: User = {} as User;
+  selectedFunctionality: Functionality | null = null;
 
   constructor(private apiService: UserApiService) {}
   ngOnInit(): void {
@@ -27,7 +29,12 @@ export class BacklogComponent {
         .getUserById(response.currentUser.id)
         .subscribe((response) => {
           this.currentUser = response;
+          this.onSelect(this.currentUser.functionalities[0]);
         });
     });
+  }
+
+  onSelect(functionality: Functionality | null) {
+    this.selectedFunctionality = functionality;
   }
 }
