@@ -104,6 +104,7 @@ export class TaskDetailsComponent {
     }
   }
 
+
   @Input() functionality: Functionality = {} as Functionality;
   @Input() task: Task = {} as Task;
   @Output() taskActiveEvent = new EventEmitter<boolean>();

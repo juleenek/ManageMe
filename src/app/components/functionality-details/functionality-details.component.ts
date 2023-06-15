@@ -61,10 +61,14 @@ export class FunctionalityDetailsComponent {
         (task) => task.status === Status.DONE
       );
 
-      if (allTasksDone) {
-        functionalityToUpdate.status = Status.DONE;
-      } else {
+      if (functionalityToUpdate.tasks.length === 0) {
         functionalityToUpdate.status = Status.TODO;
+      } else {
+        if (allTasksDone) {
+          functionalityToUpdate.status = Status.DONE;
+        } else {
+          functionalityToUpdate.status = Status.TODO;
+        }
       }
 
       this.apiService

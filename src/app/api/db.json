@@ -1,152 +1,150 @@
 {
   "users": [
     {
-      "id": "1",
-      "login": "admin",
-      "first_name": "admin",
-      "last_name": "admin",
-      "role": "Admin",
-      "password": "p@$$word"
-    },
-    {
-      "id": "38c77b79-012f-4ef1-bdda-1717ed82dae9",
+      "id": "90ade979-3af4-48a1-a8f0-8efb55f2f874",
       "functionalities": [
         {
-          "id": "f98138c1-a2d9-47e1-b051-fb72d7fcbbf6",
-          "name": "To jest funkcjonalność",
-          "description": "Jako użytkownik (klient), na stronie produktu chcę widzieć przycisk dodaj do koszyka. Obok przycisku wybór ilości paczek. Chcę, żeby stan koszyka nie przepadał po przeładowaniu strony (localStorage). Po naciśnięciu przycisku, chcę żeby pojawił się komunikat dodano {ilość paczek} do koszyk.",
-          "status": "Done",
-          "createdAt": 1686832069644,
+          "id": "48fda6dc-c9e3-404f-99c8-a794c5730e6e",
+          "name": "Strona produktu",
+          "description": "Jako klient, chcę móc wyświetlić dedykowaną produktowi stronę, zawierającą nazwę, opis produktu oraz jego zdjęcie.\n\nStrona dostępna pod adresem /product/1\n\nPrzycisk powrotu do listy produktów",
+          "status": "To do",
+          "createdAt": 1686869651727,
           "tasks": [
             {
-              "id": "edf84ea8-8715-4bc6-85af-e0ea4db20039",
-              "name": "jhgfds",
-              "description": "Jako użytkownik (klient), na stronie produktu chcę widzieć przycisk dodaj do koszyka. Obok przycisku wybór ilości paczek. Chcę, żeby stan koszyka nie przepadał po przeładowaniu strony (localStorage). Po naciśnięciu przycisku, chcę żeby pojawił się komunikat dodano {ilość paczek} do koszyk.",
-              "status": "Done",
-              "createdAt": 1686842498469
+              "id": "32b698f7-0ea3-453b-a6aa-5ace12779b6e",
+              "name": "Design strony",
+              "description": "Wyświetlenie dedykowanej produktowi stronę, zawierającą nazwę, opis produktu oraz jego zdjęcie.\n\nDesign strony oraz stylowanie zgodne z projektem graficznym",
+              "status": "To do",
+              "createdAt": 1686869676829
             },
             {
-              "id": "b4045b1f-b870-4230-9983-acaa742282e8",
-              "name": "hjgfhgdfsge",
-              "description": "",
-              "status": "Done",
-              "createdAt": 1686842552930
-            },
-            {
-              "id": "cd7ad66b-2a01-49ac-8727-eb005b6b4cec",
-              "name": "wqrwwr",
-              "description": "",
-              "status": "Done",
-              "createdAt": 1686843262257
-            },
-            {
-              "id": "1faaa546-8eac-48f4-8143-6eab1dd70a98",
-              "name": "yfkyf",
-              "description": "fyiyf",
-              "status": "Done",
-              "createdAt": 1686843881855
-            },
-            {
-              "id": "d99ef9e0-f50d-45d8-8edf-aad9d24d5a89",
-              "name": "iouly",
-              "description": "ut",
-              "status": "Done",
-              "createdAt": 1686865166752
-            },
-            {
-              "id": "a9242c5a-437d-4087-ae3b-0391b0bb5a97",
-              "name": "",
-              "description": "",
-              "status": "Done",
-              "createdAt": 1686868114435
+              "id": "41d6a0c3-8795-47f4-ae49-b63127e3a6e6",
+              "name": "Ustawienie strony pod adres /product/:id",
+              "description": "Strona dostępna pod adresem /product/:id",
+              "status": "In progress",
+              "createdAt": 1686869704037
             }
           ]
         },
         {
-          "id": "7f5eb3d3-c91c-4b58-bfb5-648fe1d352e9",
-          "name": "asrdfjgkh",
-          "description": "",
+          "id": "53bd4355-4d89-4830-9b5a-0ccee2b3ca47",
+          "name": "Dodawanie do koszyka",
+          "description": "Jako użytkownik (klient), na stronie produktu chcę widzieć przycisk “dodaj do koszyka”. Obok przycisku wybór ilości paczek.\n\nChcę, żeby stan koszyka nie przepadał po przeładowaniu strony (localStorage).\n\nPo naciśnięciu przycisku, chcę żeby pojawił się komunikat “dodano {ilość paczek} do koszyka”.",
           "status": "Done",
-          "createdAt": 1686842904757,
+          "createdAt": 1686869743031,
           "tasks": [
             {
-              "id": "002eb701-50e8-4002-bcec-055d12bff485",
-              "name": "asddrt",
-              "description": "wqer",
+              "id": "9542e506-9589-4f3c-97d5-a7f253af7523",
+              "name": "Wybór ilości paczek",
+              "description": "Jako użytkownik chce wybrać ilość paczek wybranego produktu",
               "status": "Done",
-              "createdAt": 1686843014662
-            },
-            {
-              "id": "8ca50d8b-877d-43ba-881b-2719c5d9d94e",
-              "name": "ujy",
-              "description": "",
-              "status": "Done",
-              "createdAt": 1686865858062
-            },
-            {
-              "id": "caf40a92-6339-4755-8a18-112bfecd0490",
-              "name": "dsf",
-              "description": "fd",
-              "status": "Done",
-              "createdAt": 1686867928032
+              "createdAt": 1686869779131
             }
           ]
         },
         {
-          "id": "413b238e-0619-4c63-95ca-4075afa97774",
-          "name": "Nowa funkcjonalność",
-          "description": "Jako użytkownik (klient), na stronie produktu chcę widzieć przycisk dodaj do koszyka. Obok przycisku wybór ilości paczek. Chcę, żeby stan koszyka nie przepadał po przeładowaniu strony (localStorage). Po naciśnięciu przycisku, chcę żeby pojawił się komunikat dodano {ilość paczek} do koszyk.",
-          "status": "Done",
-          "createdAt": 1686843910314,
+          "id": "d4a6f630-f2cb-45d6-8b79-eb048883d39d",
+          "name": "Navbar",
+          "description": "Jako użytkownik chcę zobaczyć navbar z dostępnymi stronami\n\nstrona główna \n\nlista produktów\n\nlista zamówień (tylko dla autoryzowanych użytkowników)",
+          "status": "To do",
+          "createdAt": 1686869824986,
           "tasks": [
             {
-              "id": "9a915bea-e494-4168-b5b4-716ef561df04",
-              "name": "ruchanie",
-              "description": "heheh wiecie o co cho",
-              "status": "Done",
-              "createdAt": 1686843940471
+              "id": "a002b057-ea38-4db3-bc61-d136fac30068",
+              "name": "Design",
+              "description": "Jako użytkownik chce wyświetlić ładny navbar",
+              "status": "To do",
+              "createdAt": 1686869852589
             },
             {
-              "id": "11088249-9d9f-442b-8b0b-d7f6a78ac6b9",
-              "name": "esrs",
-              "description": "sesss",
+              "id": "8b619866-cad0-4c6d-9593-5e5c87990174",
+              "name": "Routing",
+              "description": "Jako użytkownik chce żeby navbar działał",
               "status": "Done",
-              "createdAt": 1686843953767
-            },
-            {
-              "id": "1e9508b0-624a-423b-af98-c35afcd9f95f",
-              "name": "564",
-              "description": "5454",
-              "status": "Done",
-              "createdAt": 1686867588281
+              "createdAt": 1686869870193
             }
           ]
-        },
-        {
-          "id": "9a575007-0c7f-49f1-9c5d-f02df48336b4",
-          "name": "lo",
-          "description": "lo",
-          "status": "Done",
-          "createdAt": 1686868130365,
-          "tasks": []
         }
       ],
-      "login": "julek",
-      "first_name": "a",
-      "last_name": "a",
-      "password": "julek1",
+      "login": "uzytkownik",
+      "first_name": "jan",
+      "last_name": "kowalski",
+      "password": "uzytkownik",
       "role": "Devops"
     }
   ],
   "meta": {
     "isLogged": true,
     "currentUser": {
-      "id": "38c77b79-012f-4ef1-bdda-1717ed82dae9",
-      "functionalities": [],
-      "login": "julek",
-      "first_name": "a",
-      "last_name": "a",
-      "password": "julek1",
+      "id": "90ade979-3af4-48a1-a8f0-8efb55f2f874",
+      "functionalities": [
+        {
+          "id": "48fda6dc-c9e3-404f-99c8-a794c5730e6e",
+          "name": "Strona produktu",
+          "description": "Jako klient, chcę móc wyświetlić dedykowaną produktowi stronę, zawierającą nazwę, opis produktu oraz jego zdjęcie.\n\nStrona dostępna pod adresem /product/1\n\nPrzycisk powrotu do listy produktów",
+          "status": "To do",
+          "createdAt": 1686869651727,
+          "tasks": [
+            {
+              "id": "32b698f7-0ea3-453b-a6aa-5ace12779b6e",
+              "name": "Design strony",
+              "description": "Wyświetlenie dedykowanej produktowi stronę, zawierającą nazwę, opis produktu oraz jego zdjęcie.\n\nDesign strony oraz stylowanie zgodne z projektem graficznym",
+              "status": "To do",
+              "createdAt": 1686869676829
+            },
+            {
+              "id": "41d6a0c3-8795-47f4-ae49-b63127e3a6e6",
+              "name": "Ustawienie strony pod adres /product/:id",
+              "description": "Strona dostępna pod adresem /product/:id",
+              "status": "In progress",
+              "createdAt": 1686869704037
+            }
+          ]
+        },
+        {
+          "id": "53bd4355-4d89-4830-9b5a-0ccee2b3ca47",
+          "name": "Dodawanie do koszyka",
+          "description": "Jako użytkownik (klient), na stronie produktu chcę widzieć przycisk “dodaj do koszyka”. Obok przycisku wybór ilości paczek.\n\nChcę, żeby stan koszyka nie przepadał po przeładowaniu strony (localStorage).\n\nPo naciśnięciu przycisku, chcę żeby pojawił się komunikat “dodano {ilość paczek} do koszyka”.",
+          "status": "Done",
+          "createdAt": 1686869743031,
+          "tasks": [
+            {
+              "id": "9542e506-9589-4f3c-97d5-a7f253af7523",
+              "name": "Wybór ilości paczek",
+              "description": "Jako użytkownik chce wybrać ilość paczek wybranego produktu",
+              "status": "Done",
+              "createdAt": 1686869779131
+            }
+          ]
+        },
+        {
+          "id": "d4a6f630-f2cb-45d6-8b79-eb048883d39d",
+          "name": "Navbar",
+          "description": "Jako użytkownik chcę zobaczyć navbar z dostępnymi stronami\n\nstrona główna \n\nlista produktów\n\nlista zamówień (tylko dla autoryzowanych użytkowników)",
+          "status": "To do",
+          "createdAt": 1686869824986,
+          "tasks": [
+            {
+              "id": "a002b057-ea38-4db3-bc61-d136fac30068",
+              "name": "Design",
+              "description": "Jako użytkownik chce wyświetlić ładny navbar",
+              "status": "To do",
+              "createdAt": 1686869852589
+            },
+            {
+              "id": "8b619866-cad0-4c6d-9593-5e5c87990174",
+              "name": "Routing",
+              "description": "Jako użytkownik chce żeby navbar działał",
+              "status": "Done",
+              "createdAt": 1686869870193
+            }
+          ]
+        }
+      ],
+      "login": "uzytkownik",
+      "first_name": "jan",
+      "last_name": "kowalski",
+      "password": "uzytkownik",
       "role": "Devops"
     }
   }
