@@ -1,0 +1,50 @@
+@use "sass:map";
+@import "../../../../src/styles/variables";
+@import "../../../../src/styles/mixins";
+
+.task-details__container {
+  @include lightbox-container;
+}
+
+.task-details__box {
+  @include lightbox-box;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-bottom: 35px;
+}
+
+.task-details__header {
+  display: flex;
+  align-items: center;
+}
+
+.task-details__title {
+  @include lightbox-title;
+  margin: 20px 0 8px 0;
+}
+
+.task-details__task-icon {
+  width: 20px;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.functionality-details__status {
+  margin-bottom: 30px;
+}
+
+.task-details__close-icon {
+  @include close-icon;
+}
+
+.task-details__sub-title {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.task-details__description {
+  line-height: 20px;
+  width: 400px;
+}

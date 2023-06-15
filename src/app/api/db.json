@@ -21,7 +21,7 @@
             {
               "id": "edf84ea8-8715-4bc6-85af-e0ea4db20039",
               "name": "jhgfds",
-              "description": "",
+              "description": "Jako użytkownik (klient), na stronie produktu chcę widzieć przycisk dodaj do koszyka. Obok przycisku wybór ilości paczek. Chcę, żeby stan koszyka nie przepadał po przeładowaniu strony (localStorage). Po naciśnięciu przycisku, chcę żeby pojawił się komunikat dodano {ilość paczek} do koszyk.",
               "status": "To do",
               "createdAt": 1686842498469
             },

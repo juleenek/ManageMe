@@ -1,1 +1,28 @@
-<p>task-details works!</p>
+<div class="task-details__container">
+  <div class="task-details__box">
+    <div class="task-details__header">
+      <img
+        class="task-details__task-icon"
+        src="../../../assets/task-icon.png"
+        alt="Icon"
+      />
+      <img
+        class="task-details__close-icon"
+        src="../../../../assets/close.png"
+        alt="Close icon"
+      />
+      <h4 class="task-details__title">{{ task.name }}</h4>
+    </div>
+    <p>{{ createdDate }}</p>
+    <app-status
+      class="functionality-details__status"
+      [status]="functionality.status"
+    ></app-status>
+    <div class="task-details__under-header">
+      <p class="task-details__sub-title">Opis</p>
+      <p class="task-details__description">
+        {{ task.description }}
+      </p>
+    </div>
+  </div>
+</div>

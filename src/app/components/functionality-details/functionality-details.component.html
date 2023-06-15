@@ -1,4 +1,4 @@
-<div class="functionality-details__container">
+<div *ngIf="!isTaskDetailsActive" class="functionality-details__container">
   <div class="functionality-details__box">
     <div class="functionality-details__header">
       <img
@@ -30,6 +30,7 @@
         </div>
         <div class="functionality-details__tasks">
           <div
+            (click)="onTaskClick(true, task)"
             class="functionality-details__task"
             *ngFor="let task of functionality.tasks; let indexOfelement = index"
           >
@@ -61,3 +62,8 @@
     </div>
   </div>
 </div>
+<app-task-details
+  [functionality]="functionality"
+  [task]="clickedTask"
+  *ngIf="isTaskDetailsActive"
+></app-task-details>
