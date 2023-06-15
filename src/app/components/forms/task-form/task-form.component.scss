@@ -1,0 +1,59 @@
+@use "sass:map";
+@import "../../../../../src/styles/variables";
+@import "../../../../../src/styles/mixins";
+
+.task-form__container {
+  height: 85%;
+  padding-left: 30px;
+  border-left: 1.2px solid #00000022;
+}
+
+.task-form__title {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.task-form__label {
+  @include font-label;
+}
+
+.task-form__form-element {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  & textarea,
+  input {
+    resize: none;
+    font-size: 0.75rem;
+    width: 200px;
+    margin-top: 5px;
+    border: 1.4px solid #00000022;
+    border-radius: 3px;
+  }
+
+  & textarea {
+    height: 45px;
+  }
+}
+
+.task-form__buttons {
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-between;
+}
+
+.task-form__cancel-btn,
+.task-form__add-btn {
+  font-size: 0.75rem !important;
+  height: 30px;
+  border-radius: 6px !important;
+}
+
+.task-form__cancel-btn {
+  @include cancel-button;
+}
+
+.task-form__add-btn {
+  @include second-blue-button;
+}

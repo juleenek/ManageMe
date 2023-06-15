@@ -11,7 +11,8 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 600px;
+
+  padding-bottom: 35px;
 }
 
 .functionality-details__close-icon {
@@ -33,15 +34,14 @@
 }
 
 .functionality-details__description {
-  width: 70%;
   line-height: 20px;
+  width: 400px;
 }
 
 .functionality-details__tasks {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 40px;
 }
 
 .functionality-details__tasks-header {
@@ -56,8 +56,18 @@
   padding-right: 20px;
   color: #1799e0;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: #46b4f0;
   }
+}
+
+.functionality-details__first {
+  padding-right: 40px;
+}
+
+.functionality-details__under-header {
+  padding-top: 20px;
+  display: flex;
 }

@@ -53,6 +53,7 @@ export class FunctionalityFormComponent {
       ...this.functionality.value,
       status: Status.TODO,
       createdAt: Date.now(),
+      tasks: [],
     } as Functionality;
 
     this.currentUser.functionalities.push(functionality);

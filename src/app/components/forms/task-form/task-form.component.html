@@ -1,0 +1,22 @@
+<div class="task-form__container">
+  <h4 class="task-form__title">Dodaj zadanie</h4>
+  <form [formGroup]="task" class="task-form__form">
+    <div class="task-form__form-element">
+      <label class="task-form__label">Nazwa <span class="red">*</span></label>
+      <input formControlName="name" />
+    </div>
+    <div class="task-form__form-element">
+      <label class="task-form__label">Opis</label>
+      <textarea
+        class="task-form__input-desc"
+        formControlName="description"
+      ></textarea>
+    </div>
+  </form>
+  <div class="task-form__buttons">
+    <button (click)="closeTaskForm()" class="task-form__cancel-btn">
+      Anuluj
+    </button>
+    <button (click)="onSubmit()" class="task-form__add-btn">Dodaj</button>
+  </div>
+</div>

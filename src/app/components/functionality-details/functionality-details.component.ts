@@ -8,8 +8,7 @@ import { Functionality } from 'src/app/models/functionality.model';
 })
 export class FunctionalityDetailsComponent {
   createdDate: any;
-  @Input() functionality: Functionality = {} as Functionality;
-  @Output() closeDetailsEvent = new EventEmitter<Functionality | null>();
+  isTaskFormActive: boolean = false;
 
   ngOnInit(): void {
     this.createdDate = new Date(
@@ -25,4 +24,12 @@ export class FunctionalityDetailsComponent {
   closeDetails() {
     this.closeDetailsEvent.emit(null);
   }
+
+  changeTaskFormActive(isActive: boolean) {
+    this.isTaskFormActive = isActive;
+    
+  }
+
+  @Input() functionality: Functionality = {} as Functionality;
+  @Output() closeDetailsEvent = new EventEmitter<Functionality | null>();
 }

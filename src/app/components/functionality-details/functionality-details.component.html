@@ -1,25 +1,49 @@
 <div class="functionality-details__container">
   <div class="functionality-details__box">
-    <img
-      class="functionality-details__close-icon"
-      src="../../../../assets/close.png"
-      alt="Close icon"
-      (click)="closeDetails()"
-    />
-    <h4 class="functionality-details__title">{{ functionality.name }}</h4>
-    <p>{{ createdDate }}</p>
-    <app-status
-      class="functionality-details__status"
-      [status]="functionality.status"
-    ></app-status>
-    <p class="functionality-details__sub-title">Opis</p>
-    <p class="functionality-details__description">
-      {{ functionality.description }}
-    </p>
-    <div class="functionality-details__tasks-header">
-      <p class="functionality-details__sub-title">Tasks</p>
-      <a href="" class="functionality-details__task-add">Dodaj zadanie</a>
+    <div class="functionality-details__header">
+      <img
+        class="functionality-details__close-icon"
+        src="../../../../assets/close.png"
+        alt="Close icon"
+        (click)="closeDetails()"
+      />
+      <h4 class="functionality-details__title">{{ functionality.name }}</h4>
+      <p>{{ createdDate }}</p>
+      <app-status
+        class="functionality-details__status"
+        [status]="functionality.status"
+      ></app-status>
     </div>
-    <div class="functionality-details__tasks"></div>
+    <div class="functionality-details__under-header">
+      <div class="functionality-details__first">
+        <p class="functionality-details__sub-title">Opis</p>
+        <p class="functionality-details__description">
+          {{ functionality.description }}
+        </p>
+        <div class="functionality-details__tasks-header">
+          <p class="functionality-details__sub-title">Tasks</p>
+          <a
+            (click)="changeTaskFormActive(true)"
+            class="functionality-details__task-add"
+            >Dodaj zadanie</a
+          >
+        </div>
+        <div class="functionality-details__tasks">
+          <div
+            class="functionality-details__task"
+            *ngFor="let task of functionality.tasks; let indexOfelement = index"
+          >
+            <p>{{ indexOfelement }} {{ task.name }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="functionality-details__second">
+        <app-task-form
+          [functionality]="functionality"
+          (closeTaskFormEvent)="changeTaskFormActive($event)"
+          *ngIf="isTaskFormActive"
+        ></app-task-form>
+      </div>
+    </div>
   </div>
 </div>
