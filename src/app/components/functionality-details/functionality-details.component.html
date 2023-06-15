@@ -63,6 +63,8 @@
   </div>
 </div>
 <app-task-details
+  (taskActiveEvent)="onTaskClick($event)"
+  (detailsActiveEvent)="closeDetails()"
   [functionality]="functionality"
   [task]="clickedTask"
   *ngIf="isTaskDetailsActive"

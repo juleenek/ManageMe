@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Status } from 'src/app/models/enums/status.enum';
 import { Functionality } from 'src/app/models/functionality.model';
 import { Task } from 'src/app/models/task.model';
@@ -34,8 +34,17 @@ export class TaskDetailsComponent {
         .getUserById(response.currentUser.id)
         .subscribe((response) => {
           this.currentUser = response;
+          this.updateFunctionalityStatus();
         });
     });
+  }
+
+  onBackClick() {
+    this.taskActiveEvent.emit(false);
+  }
+
+  onExitClick() {
+    this.detailsActiveEvent.emit(true);
   }
 
   onStatusClick(status: Status) {
@@ -45,11 +54,11 @@ export class TaskDetailsComponent {
     } as Task;
     this.task.status = status;
 
-    const updatedFunctionality: Functionality = { ...this.functionality }; // Tworzenie nowego obiektu Functionality bez referencji cyklicznej
+    const updatedFunctionality: Functionality = { ...this.functionality };
 
     updatedFunctionality.tasks = updatedFunctionality.tasks.map((task) => {
       if (task.id === updatedTask.id) {
-        return updatedTask; // Zwróć zaktualizowane zadanie
+        return updatedTask;
       }
       return task;
     });
@@ -57,7 +66,7 @@ export class TaskDetailsComponent {
     this.currentUser.functionalities = this.currentUser.functionalities.map(
       (func) => {
         if (func.id === this.functionality.id) {
-          return updatedFunctionality; // Zwróć zaktualizowany obiekt Functionality, w którym zaktualizowano tablicę tasks
+          return updatedFunctionality;
         }
         return func;
       }
@@ -65,9 +74,38 @@ export class TaskDetailsComponent {
 
     this.apiService
       .updateFunctionalities(this.currentUser.id, this.currentUser)
-      .subscribe();
+      .subscribe(() => {
+        this.functionality = updatedFunctionality;
+        this.updateFunctionalityStatus();
+      });
+  }
+
+  updateFunctionalityStatus(): void {
+    const functionalityToUpdate = this.currentUser.functionalities.find(
+      (func) => func.id === this.functionality.id
+    );
+
+    if (functionalityToUpdate) {
+      const allTasksDone = functionalityToUpdate.tasks.every(
+        (task) => task.status === Status.DONE
+      );
+
+      if (allTasksDone) {
+        functionalityToUpdate.status = Status.DONE;
+      } else {
+        functionalityToUpdate.status = Status.TODO;
+      }
+
+      this.apiService
+        .updateFunctionalities(this.currentUser.id, this.currentUser)
+        .subscribe(() => {
+          this.functionality.status = functionalityToUpdate.status;
+        });
+    }
   }
 
   @Input() functionality: Functionality = {} as Functionality;
   @Input() task: Task = {} as Task;
+  @Output() taskActiveEvent = new EventEmitter<boolean>();
+  @Output() detailsActiveEvent = new EventEmitter<boolean>();
 }

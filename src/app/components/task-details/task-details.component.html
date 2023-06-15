@@ -1,5 +1,8 @@
 <div class="task-details__container">
   <div class="task-details__box">
+    <a (click)="onBackClick()" class="task-details__back"
+      >>&nbsp; Powrót do funkcjonalności</a
+    >
     <div class="task-details__header">
       <img
         class="task-details__task-icon"
@@ -7,6 +10,7 @@
         alt="Icon"
       />
       <img
+        (click)="onExitClick()"
         class="task-details__close-icon"
         src="../../../../assets/close.png"
         alt="Close icon"

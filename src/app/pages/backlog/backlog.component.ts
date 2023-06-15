@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Status } from 'src/app/models/enums/status.enum';
 import { Functionality } from 'src/app/models/functionality.model';
 import { User } from 'src/app/models/user.model';
 import { UserApiService } from 'src/app/services/user-api.service';
@@ -29,12 +30,31 @@ export class BacklogComponent {
         .getUserById(response.currentUser.id)
         .subscribe((response) => {
           this.currentUser = response;
-          this.onSelect(this.currentUser.functionalities[0]);
+          this.updateFunctionalityStatus();
         });
     });
   }
 
+  updateFunctionalityStatus(): void {
+    this.currentUser.functionalities.forEach((functionality) => {
+      const allTasksDone = functionality.tasks.every(
+        (task) => task.status === Status.DONE
+      );
+
+      if (allTasksDone) {
+        functionality.status = Status.DONE;
+      } else {
+        functionality.status = Status.TODO;
+      }
+    });
+
+    this.apiService
+      .updateFunctionalities(this.currentUser.id, this.currentUser)
+      .subscribe();
+  }
+
   onSelect(functionality: Functionality | null) {
     this.selectedFunctionality = functionality;
+    this.updateFunctionalityStatus();
   }
 }
